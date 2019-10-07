@@ -12,7 +12,7 @@ public class Ejercicio20 {
 		String Domicilio;
 		String concepto1,concepto2,concepto3,concepto4,concepto5; 
 		float cantidad1,cantidad2,cantidad3,cantidad4,cantidad5, precio1,precio2,precio3,precio4,precio5,importe1,importe2,importe3,importe4,importe5;
-		float Descuento, Total; //Descuento en %
+		float Descuento, Total, TotalDescuento; //Descuento en %
 		
 		
 		
@@ -87,31 +87,32 @@ public class Ejercicio20 {
 		System.out.println("Porcentaje del descuento: ");
 		Descuento = scanner.nextFloat();
 		
-		Descuento = Descuento/100;
 		
 		importe5= precio5*cantidad5;
 		
 		Total= importe1+importe2+importe3+importe4+importe5;
 		
+		TotalDescuento = Total-(Total*(Descuento/100));
 		
 		System.out.println("CLIENTE: "+nombre+"\t\t DNI: "+DNI);
 		System.out.println("DOMICILIO "+Domicilio);
-		System.out.println("---------------------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
 
-		System.out.println("CANTIDAD\tCONCEPTO-REFERNCIA\t\t PRECIO\t\t\t IMPORTE");
-		System.out.println("---------------------------------------------------------------------");
-		System.out.println(cantidad1+"\t\t"+concepto1+"\t\t\t\t "+precio1+"€\t\t\t "+importe1+"€");
-		System.out.println("---------------------------------------------------------------------");
-		System.out.println(cantidad2+"\t\t"+concepto2+"\t\t\t\t "+precio2+"€\t\t\t"+importe2+"€");
-		System.out.println("---------------------------------------------------------------------");
-		System.out.println(cantidad3+"\t\t"+concepto3+"\t\t\t\t "+precio3+"€\t\t\t"+importe3+"€");
-		System.out.println("---------------------------------------------------------------------");
-		System.out.println(cantidad4+"\t\t"+concepto4+"\t\t\t\t "+precio4+"€\t\t\t"+importe4+"€");
-		System.out.println("---------------------------------------------------------------------");
-		System.out.println(cantidad5+"\t\t"+concepto5+"\t\t\t\t "+precio5+"€\t\t\t"+importe5+"€");
-		System.out.println("---------------------------------------------------------------------");
-
-		System.out.println("\t\t\t\t "+Total+"");
+		System.out.println("CANTIDAD\tCONCEPTO-REFERNCIA\t\t\t PRECIO\t\t\t IMPORTE");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.println(cantidad1+"\t\t"+concepto1+"\t\t\t\t\t "+precio1+"€\t\t\t"+importe1+"€");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.println(cantidad2+"\t\t"+concepto2+"\t\t\t\t\t "+precio2+"€\t\t\t"+importe2+"€");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.println(cantidad3+"\t\t"+concepto3+"\t\t\t\t\t "+precio3+"€\t\t\t"+importe3+"€");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.println(cantidad4+"\t\t"+concepto4+"\t\t\t\t\t "+precio4+"€\t\t\t"+importe4+"€");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.println(cantidad5+"\t\t"+concepto5+"\t\t\t\t\t "+precio5+"€\t\t\t"+importe5+"€");
+		System.out.println("...............................................................................................................");
+		System.out.println("\t\t\t\t\t\tTOTAL BRUTO\t\t\tDESCUENTO\tTOTAL");
+		System.out.println("---------------------------------------------------------------------------------------------------------------");
+		System.out.println("\t\t\t\t\t\t"+Total+"\t\t\t\t% "+Descuento+"\t\t"+TotalDescuento);
 
 		
 		
