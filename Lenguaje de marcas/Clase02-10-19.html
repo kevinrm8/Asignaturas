@@ -1,0 +1,52 @@
+<html>
+    <head>
+<title>Actividad6-Formas</title>
+    </head>
+    
+    <body>
+        <form> <!-- Con form damos la opcion al programa para crear en este espacio los formulario -->
+            <fieldset> <!-- Con fieldset creamos el recuadro-->
+            <legend>Datos fiscales</legend> <!-- para poner el titulo al formulario -->
+            <input type="checkbox" id="enparo"name="sit_laboral"> <!-- Con input, dentro de el el type es para seleccionar el tipo que queremos de seleccion, un cuadrado, una celda etc -->
+            <label for="enparo">En paro</label> <!-- label se gasta para poner en pantalla el nombre o texto que queremos para seleccionar-->
+            <br>
+            <input type="checkbox" id="autonomo" name="sit_laboral">
+            <label for="autonomo">Autónomo</label>
+            <br>
+            <input type="checkbox" id="c_ajena" name="sit_laboral">
+            <label for="c_ajena">Por c.ajena</label>
+            <br>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="sueldo">Suelo</label>
+            <select id="sueldo">              
+                <option>Mas de 400€</option>
+                <option>Menos de 400€</option>    
+                <option>Variable</option>
+                </select>
+                <br>
+            <input type="checkbox" id="con_ep">
+            <label for="con_ep">Con enfermedad profesional</label>
+                <br>
+            <input type="checkbox" id="c_pc">
+            <label for="c_pc">Con padres a cargo</label>
+                <br>
+            <input type="checkbox" id="c_hc">
+            <label for="c_hc">Con hijos a cargo</label>
+                
+                
+            </fieldset>
+            
+            
+            
+        </form>
+    </body>
+</html>
