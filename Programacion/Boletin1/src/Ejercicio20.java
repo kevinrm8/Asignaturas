@@ -100,19 +100,19 @@ public class Ejercicio20 {
 
 		System.out.println("CANTIDAD\tCONCEPTO-REFERNCIA\t\t\t PRECIO\t\t\t\t\tIMPORTE");
 		System.out.println("---------------------------------------------------------------------------------------------------------------");
-		System.out.println(cantidad1+"\t\t"+concepto1+"\t\t\t\t\t "+precio1+"€\t\t\t\t\t"+importe1+"€");
+		System.out.println(cantidad1+"\t\t"+concepto1+"\t\t\t\t\t "+precio1+"â‚¬\t\t\t\t\t"+importe1+"â‚¬");
 		System.out.println("---------------------------------------------------------------------------------------------------------------");
-		System.out.println(cantidad2+"\t\t"+concepto2+"\t\t\t\t\t "+precio2+"€\t\t\t\t\t"+importe2+"€");
+		System.out.println(cantidad2+"\t\t"+concepto2+"\t\t\t\t\t "+precio2+"â‚¬\t\t\t\t\t"+importe2+"â‚¬");
 		System.out.println("---------------------------------------------------------------------------------------------------------------");
-		System.out.println(cantidad3+"\t\t"+concepto3+"\t\t\t\t\t "+precio3+"€\t\t\t\t\t"+importe3+"€");
+		System.out.println(cantidad3+"\t\t"+concepto3+"\t\t\t\t\t "+precio3+"â‚¬\t\t\t\t\t"+importe3+"â‚¬");
 		System.out.println("---------------------------------------------------------------------------------------------------------------");
-		System.out.println(cantidad4+"\t\t"+concepto4+"\t\t\t\t\t "+precio4+"€\t\t\t\t\t"+importe4+"€");
+		System.out.println(cantidad4+"\t\t"+concepto4+"\t\t\t\t\t "+precio4+"â‚¬\t\t\t\t\t"+importe4+"â‚¬");
 		System.out.println("---------------------------------------------------------------------------------------------------------------");
-		System.out.println(cantidad5+"\t\t"+concepto5+"\t\t\t\t\t "+precio5+"€\t\t\t\t\t"+importe5+"€");
+		System.out.println(cantidad5+"\t\t"+concepto5+"\t\t\t\t\t "+precio5+"â‚¬\t\t\t\t\t"+importe5+"â‚¬");
 		System.out.println("...............................................................................................................");
 		System.out.println("\t\t\t\t\t\tTOTAL BRUTO\t\t\tDESCUENTO\t\tTOTAL");
 		System.out.println("---------------------------------------------------------------------------------------------------------------");
-		System.out.println("\t\t\t\t\t\t"+Total+"€\t\t\t\t% "+Descuento+"\t\t\t"+TotalDescuento+"€");
+		System.out.println("\t\t\t\t\t\t"+Total+"â‚¬\t\t\t\t% "+Descuento+"\t\t\t"+TotalDescuento+"â‚¬");
 
 		
 		
