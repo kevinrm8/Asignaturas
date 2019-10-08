@@ -23,5 +23,4 @@ public class Ejercicio25 {
 		System.out.println("El valor de la hipotenusa es: "+c);
 		
 	}
-
 }

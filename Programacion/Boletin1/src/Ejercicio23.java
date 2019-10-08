@@ -11,11 +11,15 @@ public class Ejercicio23 {
 
 		Scanner scanner = new Scanner(System.in);
 		
-		String DNI, nombre, direccion,fecha;
+		String DNI, nombre, direccion;
+		int anyo, mes,dia;
 		float salario, retencion;
 		
 		System.out.println("Introduce fecha de nacimiento en formato AAAA MM DD");
-		fecha = scanner.nextLine();
+		anyo = scanner.nextInt();
+		mes = scanner.nextInt();
+		dia = scanner.nextInt();
+		scanner.nextLine();
 		
 		System.out.println("Introduce el DNI: ");
 		DNI = scanner.nextLine();
@@ -38,7 +42,7 @@ public class Ejercicio23 {
 		System.out.println("Direccion.....................: "+direccion+"\n");
 
 		System.out.println("DNI...........................: "+DNI);
-		System.out.println("Fecha de nacimiento...........: "+fecha);
+		System.out.println("Fecha de nacimiento...........: "+dia+" del mes "+mes+" del año "+anyo);
 		
 		System.out.println("Salario bruto.................: "+salario+"\n");
 		System.out.println("Retencion.....................: "+retencion);
