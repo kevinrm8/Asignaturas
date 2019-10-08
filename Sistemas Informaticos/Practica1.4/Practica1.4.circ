@@ -145,8 +145,8 @@
     <wire from="(1060,650)" to="(1100,650)"/>
     <wire from="(1160,310)" to="(1200,310)"/>
     <wire from="(140,440)" to="(190,440)"/>
-    <wire from="(1170,630)" to="(1170,660)"/>
     <wire from="(1060,240)" to="(1160,240)"/>
+    <wire from="(1170,630)" to="(1170,660)"/>
     <wire from="(790,330)" to="(890,330)"/>
     <wire from="(860,240)" to="(960,240)"/>
     <wire from="(960,580)" to="(1060,580)"/>
@@ -200,8 +200,8 @@
     <wire from="(760,580)" to="(760,660)"/>
     <wire from="(130,160)" to="(130,190)"/>
     <wire from="(190,540)" to="(190,570)"/>
-    <wire from="(840,660)" to="(840,740)"/>
     <wire from="(860,240)" to="(860,320)"/>
+    <wire from="(840,660)" to="(840,740)"/>
     <wire from="(1050,640)" to="(1100,640)"/>
     <wire from="(1240,310)" to="(1250,310)"/>
     <wire from="(140,170)" to="(140,210)"/>
@@ -217,107 +217,23 @@
     <wire from="(830,660)" to="(840,660)"/>
     <wire from="(480,230)" to="(480,290)"/>
     <wire from="(180,570)" to="(180,630)"/>
-    <comp lib="0" loc="(60,190)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(460,460)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(900,420)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(60,130)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="2" loc="(570,270)" name="Decoder">
-      <a name="select" val="4"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(60,150)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(579,65)" name="Text">
-      <a name="text" val="EJERCICIO 4"/>
-    </comp>
-    <comp lib="6" loc="(1005,208)" name="Text">
-      <a name="text" val="EJERCICIO 12"/>
-    </comp>
-    <comp lib="0" loc="(140,440)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="4" loc="(1030,310)" name="J-K Flip-Flop"/>
-    <comp lib="4" loc="(930,650)" name="J-K Flip-Flop">
-      <a name="trigger" val="falling"/>
-    </comp>
-    <comp lib="0" loc="(970,420)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(489,412)" name="Text">
-      <a name="text" val="EJERCICIO 5"/>
-    </comp>
-    <comp lib="0" loc="(470,290)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(60,210)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="5" loc="(480,230)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(180,630)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="2"/>
+    <comp lib="0" loc="(110,310)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="4" loc="(830,660)" name="J-K Flip-Flop">
       <a name="trigger" val="falling"/>
     </comp>
-    <comp lib="0" loc="(550,550)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="4" loc="(1140,300)" name="J-K Flip-Flop"/>
-    <comp lib="0" loc="(1170,660)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(260,550)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="5" loc="(790,170)" name="LED"/>
-    <comp lib="0" loc="(260,590)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(790,330)" name="Clock"/>
-    <comp lib="0" loc="(260,570)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="6" loc="(143,255)" name="Text">
       <a name="text" val="EJERCICIO2"/>
     </comp>
-    <comp lib="0" loc="(810,220)" name="Constant">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(60,210)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(620,460)" name="Pin">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(110,330)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1230,680)" name="Pin">
+      <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
@@ -328,85 +244,86 @@
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="4" loc="(1140,630)" name="J-K Flip-Flop">
-      <a name="trigger" val="falling"/>
+    <comp lib="6" loc="(579,65)" name="Text">
+      <a name="text" val="EJERCICIO 4"/>
+    </comp>
+    <comp lib="0" loc="(550,550)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="1" loc="(730,170)" name="OR Gate">
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="0" loc="(110,350)" name="Pin">
+    <comp lib="0" loc="(180,630)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="4" loc="(1040,640)" name="J-K Flip-Flop">
-      <a name="trigger" val="falling"/>
+    <comp lib="0" loc="(620,460)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(60,70)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(690,670)" name="Clock"/>
+    <comp lib="0" loc="(60,110)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1170,660)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(190,130)" name="Priority Encoder"/>
+    <comp lib="0" loc="(260,550)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(790,330)" name="Clock"/>
+    <comp lib="5" loc="(480,230)" name="Hex Digit Display"/>
     <comp lib="0" loc="(1230,420)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1260,680)" name="Pin">
-      <a name="facing" val="south"/>
+    <comp lib="6" loc="(128,492)" name="Text">
+      <a name="text" val="EJERCICIO 3"/>
+    </comp>
+    <comp lib="0" loc="(140,440)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="5" loc="(790,170)" name="LED"/>
+    <comp lib="4" loc="(930,650)" name="J-K Flip-Flop">
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="0" loc="(1130,420)" name="Pin">
+      <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(110,560)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="4" loc="(930,320)" name="J-K Flip-Flop"/>
-    <comp lib="0" loc="(60,110)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(110,310)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(128,492)" name="Text">
-      <a name="text" val="EJERCICIO 3"/>
-    </comp>
-    <comp lib="0" loc="(60,170)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="2" loc="(210,320)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="6" loc="(124,34)" name="Text">
-      <a name="text" val="CODIFICADOR DE 3 BITS"/>
-    </comp>
-    <comp lib="4" loc="(1240,290)" name="J-K Flip-Flop"/>
-    <comp lib="0" loc="(110,330)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="2" loc="(190,130)" name="Priority Encoder"/>
-    <comp lib="6" loc="(905,548)" name="Text">
-      <a name="text" val="EJERCICIO 12"/>
-    </comp>
-    <comp lib="0" loc="(110,290)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="0" loc="(60,90)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="2" loc="(570,460)" name="BitSelector"/>
-    <comp lib="0" loc="(60,70)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(710,560)" name="Constant">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="0" loc="(1230,680)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(260,320)" name="Pin">
+    <comp lib="0" loc="(260,570)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(60,130)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(260,130)" name="Pin">
       <a name="facing" val="west"/>
@@ -415,8 +332,49 @@
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1130,420)" name="Pin">
+    <comp lib="0" loc="(110,560)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(905,548)" name="Text">
+      <a name="text" val="EJERCICIO 12"/>
+    </comp>
+    <comp lib="0" loc="(470,290)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1030,310)" name="J-K Flip-Flop"/>
+    <comp lib="0" loc="(110,350)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(60,190)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(900,420)" name="Pin">
       <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(570,270)" name="Decoder">
+      <a name="select" val="4"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1040,640)" name="J-K Flip-Flop">
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="0" loc="(810,220)" name="Constant">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(460,460)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(1005,208)" name="Text">
+      <a name="text" val="EJERCICIO 12"/>
+    </comp>
+    <comp lib="4" loc="(1140,300)" name="J-K Flip-Flop"/>
+    <comp lib="0" loc="(260,320)" name="Pin">
+      <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
@@ -427,10 +385,52 @@
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="2" loc="(570,460)" name="BitSelector"/>
+    <comp lib="6" loc="(124,34)" name="Text">
+      <a name="text" val="CODIFICADOR DE 3 BITS"/>
+    </comp>
+    <comp lib="4" loc="(1240,290)" name="J-K Flip-Flop"/>
+    <comp lib="2" loc="(210,320)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
     <comp lib="2" loc="(140,530)" name="Demultiplexer">
       <a name="select" val="2"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(690,670)" name="Clock"/>
+    <comp lib="6" loc="(489,412)" name="Text">
+      <a name="text" val="EJERCICIO 5"/>
+    </comp>
+    <comp lib="4" loc="(930,320)" name="J-K Flip-Flop"/>
+    <comp lib="0" loc="(110,290)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1140,630)" name="J-K Flip-Flop">
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="0" loc="(260,590)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(970,420)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(60,150)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1260,680)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(60,170)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
   </circuit>
 </project>
