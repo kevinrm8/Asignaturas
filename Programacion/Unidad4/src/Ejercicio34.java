@@ -49,7 +49,7 @@ public class Ejercicio34 {
 		
 		System.out.println("-----------------------------------------");
 		System.out.println("Sueldo base es\t\t\t"+sueldo);
-		System.out.println("Dietas ("+viaje+"viajes)\t\t"+dietas);
+		System.out.println("Dietas ("+viaje+" viajes)\t\t"+dietas);
 		System.out.println("-----------------------------------------");
 		System.out.println("Sueldo bruto\t\t\t"+bruto);
 		System.out.println("Retencion IRP("+retencion+"%)\t\t "+(sueldo*(retencion/100)));
