@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio39 {
-	/* Nombre: Kevin
+	/* Nombre: Kevin Rosales
 	 * Fecha:18/10/19
 	 * Descripcion: Primera practica entregale. Juego Piedra,Papel,Tijera.
 	 * */
