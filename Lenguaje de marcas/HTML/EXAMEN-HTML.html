@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title> EXAMEN HTML</title>
+        </head>
+    <body bgcolor="008933" marginwidth="50">
+    <h1> PRUEBAS PARA EXAMEN DE HTML</h1> <!--  -->
+    <p>Si escribo aqui tambien esta en medio</p> 
+    <p align="center"><a href="https://es.nba.com/?gr=www" target=":blank"><img src="Imagen.jpg" ></a></p> <!-- Poner al entro la imagen -->
+        <p align="center"><b><i><u><font size="8" color="red">La imagen lleva a la...</font></u></i></b></p>
+        <ul>
+            <li type="square"><font size="10" color="red"><b>N</b></font></li>
+            
+            <ul> <li type="circle"><u>B</u></li></ul>
+        <li><i>A</i></li>
+        </ul>
+        
+            <!-- PROBANDO COMO TABULAR; PONER NUMEROS EN LAS LISTAS-->
+        <li>Prueba</li>
+        <ul>
+            <ul>
+                <ul>
+            <ol>
+                <li>PRUEBA</li>
+               <li>Deberia ir 2</li>
+                
+            
+                </ol>
+                </ul>
+            </ul>
+        </ul>
+        
+        <table width="100%" border="1">
+      <tr>      <!-- Creamos la primera tabla, en la primera fila con th ponemos los dias de la semana como cabecera-->
+                <th><b><i>Horario</i></b></th>
+                <th style="color:blue"> LUNES</th>
+                <th style="color:blue"> MARTES</th>
+                <th style="color:blue"> MIERCOLES</th> 
+                <th style="color:blue">JUEVES</th>
+                <th style="color:blue">VIERNES</th>
+                <th><b><i>Horario</i></b></th>
+            </tr>
+      
+        <tr>
+            <td align="center"><b><i>08:00-08:55</i></b></td>
+            <td rowspan="2" align="center">BD</td>
+            <td bgcolor="green" align="center">LMI</td>
+            <td align="center">FOL</td>
+            <td align="center">ED</td>
+            <td rowspan="3" align="center">BD</td>
+            </tr>    
+            
+         <tr>
+             <td align="center"><b><i>08:55-09:50</i></b></td>
+            <td></td>
+            </tr>
+            
+            
+        <tr>
+            <td align="center"><b><i>09:50-10:45</i></b></td>
+            </tr>
+            
+              <tr>
+                  <td align="center"><b><i>10:45-11:15</i></b></td>
+            <td colspan="5"></td>
+            </tr>
+            
+              <tr>
+                  <td align="center"><b><i>08:00-08:55</i></b></td>
+            <td></td>
+            </tr>
+            
+              <tr>
+                  <td align="center"><b><i>08:00-08:55</i></b></td>
+            <td></td>
+            </tr>
+            
+              <tr>
+                  <td align="center"><b><i>08:00-08:55</i></b></td>
+            <td></td>
+            </tr>
+            
+              <tr>
+                  <td align="center"><b><i>08:00-08:55</i></b></td>
+            <td></td>
+            </tr>
+            
+            
+            
+        </table>
+    
+        <!-- Ahora probaremos hacer formularios -->
+        
+        <br>
+        <br>
+        <br>
+        
+        <form>
+        
+            <fieldset> <!-- Seleccionar pais escribiendo-->
+            <legend>Pais</legend>
+                <input name="Pais" type="texto" value="España">
+            
+           </fieldset>
+        </form>
+        
+            <!-- Seleccionando-->
+        
+        <form><fieldset>
+            <input name="Sexo" type="radio" value="hombre" checked>Hombre<br> <!-- value sirve para poner dentro del recuadro algo predeterminado-->
+            <input name="Sexo" type="radio" value="mujer">Mujer<br>
+            <input name="Sexo" type="radio" valuie="Otro">Otro<br>
+            </fieldset>
+        </form>      
+                
+                    <!-- Listado-->
+        <form>
+        <fieldset>
+            <legend>Coches</legend>
+            <select name="audi"> 
+                <option value="Audi">Audi</option>
+                <option value="Ford">Ford</option>
+                <option value="Ferrari">Ferrari</option>
+            </select>
+            
+            
+            </fieldset>
+        </form>
+        
+        
+        
+        <br>
+        <br>
+        <form>
+            <fieldset>
+            <legend>PRUEBA</legend>
+                <input type="checkbox">Hola1<br>
+                <input type="checkbox">Hola2
+            
+            
+            
+            </fieldset>
+            
+        
+        </form>
+        
+        
+        
+        <br>
+        <p> PRUEBA FORMULARIOS</p>
+        <form>
+            <fieldset>
+                <legend>ENCABEZADO</legend>
+                    <input type="radio" id="Prueba" name="Nosale">Uno
+    <select id="Prueba">
+                        <option>Numero1</option>
+                        <option>Numero2</option>
+                </select>
+                    <input type="radio"id="Prueba" name="Nosale">Dos
+                
+            
+            </fieldset>
+        
+        </form>
+        
+        <!-- 
+                <input type="radio" id="extranjero" name="fuera">
+               <label for="extranjero">Si</label> 
+                    <select id="extranjero"> 
+                        <option>Dentro de la UE</option>
+                        <option>Fuera de la UE</option>
+                    </select>
+               <br>
+               <input type="radio" id="extranjero" name="fuera" >
+               <label for="extranjero">No</label>
+-->
+        
+    </body>
+</html>
