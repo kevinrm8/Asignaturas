@@ -25,7 +25,7 @@ public class Ejercicio44 {
 								} else {
 		
 		for(fila=0;fila<altura;fila++) { // Este for recorre las filas.
-			for(col=0;col<=altura;col++) { // Este recorre las columnas.
+			for(col=0;col<altura;col++) { // Este recorre las columnas.
 											// Hasta que no acaba la fila no pasa a la segunda columna.
 				if(fila==col || col==altura-fila-1) // Escribe "*" cuando la fila y la columna son iguales, cuando no se pone espacia
 					System.out.print("*");						

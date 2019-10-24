@@ -1,11 +1,14 @@
 import java.util.Scanner;
 
-public class Ejercicio47 {
+public class Ejercicio47 {/*Nombre: Kevin Rosales
+	 * Fecha: 24/10/19
+	 *  Resumen: Abrir caja fuerte
+	 *  */
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-	int codigo,combinacion,intentos=3;
+	int codigo,combinacion,intentos=4;
 	
 	codigo = 1234;
 	
