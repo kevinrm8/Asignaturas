@@ -95,7 +95,6 @@ public class Ejercicio56 {
 		formatoDelTexto = new SimpleDateFormat("dd/MM/yyyy");
 
 		
-////		long diferencia=0;
 		int dia,mes,ano,dia1,mes1,ano1;
 		Date fecha,fecha1;
 		long diferencia;
@@ -125,13 +124,35 @@ public class Ejercicio56 {
 		
 		diferencia = fecha.getTime()-fecha1.getTime();
 		
-		diferencia= diferencia/1000*60*60*24;
+		diferencia= diferencia/(1000*60*60*24);
 		
 		System.out.println("La diferencia es de: "+diferencia);
 		return;
 	}
-	public static void opcion5(Date ahora) {
+	public static void opcion5(Date ahora) throws ParseException {
+		Scanner scanner = new Scanner(System.in);
+
+		SimpleDateFormat formatoDelTexto = new SimpleDateFormat("dd/MM/yyyy");
+		formatoDelTexto = new SimpleDateFormat("dd-MM-yyyy");
+		int dia,mes,ano;
+		Date fecha;
 		
+		System.out.println("Introduce dia:");
+		dia=scanner.nextInt();
+		System.out.println("Introduce mes:");
+		mes=scanner.nextInt();
+		System.out.println("Introduce ano:");
+		ano=scanner.nextInt();
+
+		String cadena = dia+"-"+mes+"-"+ano;
+		fecha = formatoDelTexto.parse(cadena);
+		
+		boolean diferencia= ahora.after(fecha);
+		
+		if(diferencia == true)
+			System.out.println("La fecha es anterior");
+		else System.out.println("La fecha es posterior");
+
 		return;
 	}
 	public static void opcion9(Date ahora) {
