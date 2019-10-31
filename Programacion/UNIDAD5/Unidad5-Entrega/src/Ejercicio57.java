@@ -84,7 +84,7 @@ public class Ejercicio57 {
 				
 				for(int i=cadena.length()-1;i>=0;i--)
 					cadenainvertida = cadenainvertida +cadena.charAt(i);
-				if(cadena == cadenainvertida)
+				if(cadena.equals(cadenainvertida))
 					System.out.println("Es palindromo");
 				else System.out.println("No es un palindromo");
 				
