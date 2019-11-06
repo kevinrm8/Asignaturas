@@ -1,0 +1,62 @@
+body{
+            background-color: aquamarine;
+            background-attachment: fixed;
+            font-family: "Times New Roman";
+            font-size: 12px;     
+            }
+
+main{
+   
+}
+nav{
+    background-color: black;
+    color:white;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    
+}
+article{
+    border-style: dotted;
+    border-radius: 60px;
+    background-color: crimson;
+    height: 200px;
+    margin-right:auto; 
+    
+}
+section{
+    margin: 10px;
+    margin-left: 30px;
+    
+}
+aside{
+    background-color: brown;
+    height: 200px;
+    margin-left: auto;
+    align-content: 
+    }
+
+
+a{
+    text-decoration: none;
+    font-size:20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-style: double;
+    border:5px,
+}
+a.index{
+    border-style: hidden;
+    
+}
+
+/* Cuando ponemos un ID se llama de esta manera con el # */
+#prueba{
+            color:orange;
+            background-color:darkviolet;
+            text-align: center;
+            font-family: "Times New Roman";
+            font-size: 50px;
+}
+
