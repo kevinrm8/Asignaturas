@@ -1,5 +1,4 @@
 body{
-            background-color: aquamarine;
             background-attachment: fixed;
             font-family: "Times New Roman";
             font-size: 12px; 
@@ -15,10 +14,22 @@ main{
 }
 nav{
     background-color: black;
-    color:white;
-    height: 20px;
-    text-align: center;
+    color: white;
     padding: 10px;
+    
+}
+nav ul{
+    list-style-type: none;
+    text-align: ;
+    
+}
+nav li{
+    display: inline;
+}
+nav a{
+    border: 10px double green;
+    color:white;
+    
     
 }
 section{
@@ -45,23 +56,14 @@ aside{
 a{
     text-decoration: none;
     font-size:20px;
-    color: white;
-    text-align: center;
     padding: 10px;
-    border-style: double;
-    border:5px,
 }
 a.index{
     border-style: hidden;
-    
-    
 }
 footer{
     position:fixed;
     bottom: 0;
-    /*margin-top: 100%;
-    height: 90px;
-    /*border: 1px solid;*/
     width: 100%;
     
 }
