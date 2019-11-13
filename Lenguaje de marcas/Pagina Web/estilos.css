@@ -8,7 +8,7 @@ body{
 main{
     float: left;
     width: 78%;
-    height: 500px;
+    height: auto;
 }
 /* ---------NAVEGADOR--------*/
 nav{
@@ -28,10 +28,16 @@ nav li{
 }
 nav a{
     font-size: 20px; 
-    color:white;   
+    color:white;  
+
+    background-color: forestgreen;
+    border: 5px outset darkseagreen;
+    border-radius: 60px;
+    
 }
 nav a.activo{
-    color:black;   
+    background-color: white;
+    color:black;  
 }
 /* ----HEADER-------*/
 
@@ -50,17 +56,42 @@ header{
     font-size: 50px;
 }
 
-header li{
-    justify-content: center;
-    align-content: center;
-    display: inline-flex;
+header img.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    border:5px outset orange;
+    border-radius: 40px;
+}
+header img.Chuches1{
+    
+        width: 150px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    
+        border:5px outset none;
+        border-radius: 60px;
+    
+        transform: rotate(-20deg);
 
 }
+header img.Chuches2{
+    
+        width: 150px;
+        margin-left: 100px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        border:5px outset none;
+        border-radius: 60px;
+    
+        transform: rotate(20deg);
+
+}/*
 .texto{
   margin: 100px;  
-    
-    
-}
+}*/
 
 a{
     text-decoration: none;
@@ -76,28 +107,94 @@ section{
     border:5px inset black; 
     border-radius: 60px;
     background-color: darkgray;
-    height: 500px;
+    height: auto;
     margin-right:auto; 
     
+}
+.IMAGEN{/* PONER LA IMAGEN UNA SOLA QUE OCUPE TODO*/
+    background-image: url(img/fonfo-chuches2.jpg);
 }
 article{
     border:5px inset black;
     border-radius: 60px;
     background-color: white;
     margin: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
+
+}
+article h1{
+    text-align: center;
+    
+    font-size: 50px;
+    color:hotpink;
+    font-weight: 900;    
+}
+article img.foto{
+    height: 200px;
+    
+    /*FALTA CENTRAR IMAGENES 
+    margin-left: center;
+    margin-bottom:20px;
+    margin-right: auto;*/
+    
+    border-radius: 60px;
     
 }
-
+.intro{
+    margin:30px;
+    font-size: 15px;
+    font-weight: bolder;
+    color:blue;
+    
+}
+article p.titulo{
+    color:crimson;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 60px;
+    border:5px solid black;
+    height: auto;
+}
+article p.texto{
+    font-size: 15px;
+    font-family: monospace;
+    font-style: italic;
+    font-weight: 900;
+    
+    text-align: center;
+    border:1px solid;
+    height: auto;
+}
+iframe{
+    margin:20px;
+    height: 300px;
+    border-radius: 60px;
+}
 /* ----ASIDE---*/
 aside{
     background-color: darkgray;
     border: 5px inset black;
     border-radius: 60px;
-    height: 500px;
+    height: auto;
     width: 20%;
     float: right;
     }
+aside p{
+    margin-top: 10px;
+    margin: 20px;
+    border: 5px outset hotpink;
+    border-radius: 60px;
+    font-size: 20px;
+    text-align: center;
+    background-color: skyblue;
+}
+aside img{
+    height: 50px;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 /*----------- FOOTER---------*/
 footer{
     
@@ -110,7 +207,18 @@ footer{
     width: 100%;
     
 }
+footer li{
+    margin-left: 20px;
+    
+    
+}
+footer img{ /* FALTA PONER A LA DERECHA DEL TODO EL LOGO */
+    margin: 20px;
+    height: 40px;
+    
+    border:5px outset orange;
+    border-radius: 40px;
+}
 
-/* Cuando ponemos un ID se llama de esta manera con el # */
 
 
