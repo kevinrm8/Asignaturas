@@ -133,17 +133,19 @@ article h1{
 }
 article img.foto{
     height: 200px;
-    
-    /*FALTA CENTRAR IMAGENES 
-    margin-left: center;
-    margin-bottom:20px;
-    margin-right: auto;
-    padding-right: 50px;*/
     margin-bottom: 10px;
     margin-right: 50px;
     border-radius: 60px;
     
 }
+p.Curriculum{
+    margin-top: 10px;
+    margin: 20px;
+    border:5px solid black;
+    border-radius: 60px;
+    font-size: 50px;
+    text-align: center;
+    background-color: skyblue}
 .intro{
     margin:30px;
     font-size: 15px;
@@ -161,11 +163,10 @@ article p.titulo{
 article p.texto{
     font-size: 15px;
     font-family: monospace;
-    font-style: italic;
     font-weight: 900;
     
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
     
     height: auto;
 }
@@ -177,6 +178,65 @@ iframe{
     border-radius: 60px;
     text-align: center;
 }
+
+.formulario{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+}
+input[type=text] {
+  
+  padding: 5px 10px; 
+  margin: 8px 10px;
+    border-bottom-style: groove;
+  border-radius: 4px;
+}
+input[type=date] {
+    padding: 5px 10px;
+    margin: 8px 10px;
+    border-bottom-style: groove;
+  border-radius: 4px;
+}
+input[type=email] {
+    padding: 5px 10px;
+    margin: 8px 10px;
+    border-bottom-style: groove;
+    border-radius: 4px;
+}
+input[type=button]{
+    padding: 5px 10px;
+    margin: 8px 10px;
+    border-bottom-style: groove;
+    border-radius: 4px;    
+}
+input[type=file]{
+    padding: 5px 10px;
+    margin: 8px 10px;
+
+    border-radius: 4px;    
+}
+form textarea{
+    
+    width: 90%;
+    margin-left:40px; 
+    margin-right: 40px;
+    
+}
+p.formulario{
+    text-align: center;
+    font-size: 12px;
+}
+p.trabajo{
+    text-align: center;
+    font-size: 25px;
+}
+p.clausula{
+    font-size: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
 /* ----ASIDE---*/
 aside{
     background-color: darkgray;
