@@ -11,8 +11,8 @@ public class Ejercicio66 {
 		Scanner scanner = new Scanner(System.in);
 		
 		int[][] matriz;
-		int fil,col,inf,sup,buscar,cont=0;
-		String salir;
+		int fil,col,inf,sup,buscar=0,cont=0,control=0;
+		String salir="";
 		
 		System.out.println("Introduzca num de filas de la matriz");
 		fil = scanner.nextInt();
@@ -40,24 +40,29 @@ public class Ejercicio66 {
 		}
 		do {
 			//Buscar numero en la matriz
-			System.out.println("¿Que numero quieres buscar en la matriz?(-1 para salir)");
-			
-			// HE INTENTADO HACERLO CON PARSE INT PERO NO ME HA DADO TIEMPO
-// 			salir=scanner.nextLine(); 
-//			if(salir.contentEquals("salir"))
-//				break;
-//			else
-//			
-//			buscar = Integer.parseInt(salir);
-
-			buscar = scanner.nextInt();
 			
 			
-			// NO ME HA DADO TIEMPO PARA HACER BIEN LA SALIDA. 
-			//Pongo que si es -1 se acabe el programa
-			if(buscar ==-1)
+			do {
+				 control=0;
+				try {
+					System.out.println("¿Que numero quieres buscar en la matriz?(-1 para salir)");
+					salir=scanner.nextLine(); 
+	 			
+					if(salir.contentEquals("salir")) //salir del bucle Do
+						break;
+					else
+						buscar = Integer.parseInt(salir);
+	 			
+				} catch (NumberFormatException e) {
+					control =1;
+					System.out.println("Datos introducidos incorrectos");
+					}
+				}while (control != 0);
+			
+			if(salir.contentEquals("salir")) // sale del segundo bucle DO
 				break;
 			
+			cont = 0;
 			for(int i=0;i<fil;i++) {
 				for(int j=0;j<col;j++) {
 					if(buscar<inf && buscar>sup)
