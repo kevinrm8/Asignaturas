@@ -31,7 +31,8 @@ public class Metodos {
 		
 		for(int i=0;i<200;i++)
 			System.out.print(ThreadLocalRandom.current().nextInt(min,max)+"  ");
-		
 	}
+	
+	
 	
 }
