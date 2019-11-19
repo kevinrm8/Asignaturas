@@ -35,37 +35,49 @@
     
         <section>
             
-                <p class="Curriculum">¿Quieres trabajar con nosotros? Envianos tus datos!</p> 
+                <p class="Curriculum">¿Quieres trabajar con nosotros?<br> Envianos tus datos!</p> 
                 
-            <table class="tabla" border="1">
+            <table class="tabla">
              <form class="formulario">
                 <tr>
-                    <th><p class="formulario"><label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre"></p></th>
-                    <th><p class="formulario"><label for="apellido">Apellidos</label> <input type="text" id="apellido" name="apellido"></p></th>
+                    <th><p class="formulario"><label for="nombre">Nombre:</label><br><input type="text" id="nombre" name="nombre"></p></th>
+                    <th><p class="formulario"><label for="apellido">Apellidos</label><br><input type="text" id="apellido" name="apellido"></p></th>
                  </tr>
                  <tr>
-                    <th><p class="formulario"><label>DNI:</label> <input type="text"></p></th>    
-                    <th><p class="formulario"><label>Fecha Nacimiento</label> <input type="date"></p></th>
+                    <th><p class="formulario"><label>DNI:</label><br><input type="text"></p></th>    
+                    <th><p class="formulario"><label>Fecha Nacimiento</label><br><input type="date"></p></th>
                  </tr>
                  <tr>
-                    <th><p class="formulario"><label>Direccion:</label><input type="text"></p></th>
-                     <th><p class="formulario"><label>Codigo Postal:</label> <input type="text"></p></th>
+                    <th><p class="formulario"><label>Direccion:</label><br><input type="text"></p></th>
+                     <th><p class="formulario"><label>Codigo Postal:</label><br><input type="text"></p></th> 
+                 </tr>
+                 
+                 <tr>
+                    <th><p class="formulario"><label>Email:</label><br><input type="email"></p></th>
+                    <th><p class="formulario"><label>Telfono de contacto:</label><br><input type="text"></p></th>
+                 </tr>
+                 
+                 <tr>
+                     <th><p class="formulario"><label>¿Tiene experiencia en el sector?</label>
+                     <select>
+                         <option>Si</option>
+                         <option>No</option>
+                         </select>
+                         <br>
+                        <input type="radio" name="exp"><label>Menos de 1 año</label> <input type="radio" name="exp"><label>Enre 1 y 2 años</label><input type="radio" name="exp"><label>Más de 2 años</label>
+                         <br>
+                         <label>¿Donde has obtenido la experiencia?</label><input type="text">
+                     </th>
+                     <th><p class="trabajo">¿Porque quiere trabajar con nosotros?<br><textarea class="trabajo" placeholder="Escriba aqui..." rows="10"></textarea></p></th>
                     
                  </tr>
-                 <tr>
-                    <th><p class="formulario"><label>Email:</label></p></th>
-                    <th><p><input type="email"></p></th>
-                    <th><p class="formulario"><label>Telfono de contacto:</label></p></th>
-                    <th><p><input type="text"></p></th>
+                 
+                  <tr>
+                    <th colspan="2"><p class="curriculum"><label>Adjunta tu curriculum vitae.</label><input type="file"></p></th>
                  </tr>
-                 <tr>
-                    <th colspan="2"><p class="formulario"><label>Adjunta tu curriculum vitae.</label><input type="file"></p></th>
-                 </tr>
-                 <tr>
-                 <th colspan="2"><p class="trabajo">¿Porque quiere trabajar con nosotros?<br><textarea class="trabajo" placeholder="Escriba aqui..." rows="10"></textarea></p></th>
-                 </tr>
-                 <th><p class="formulario"><input type="checkbox"><label>Acepto la política de privacidad.</label></p></th>
-                    <th><input type="submit" value="Enviar"></th>
+                 
+                 <th colspan="2"><p class="formulario"><input type="checkbox"><label>Acepto la política de privacidad.</label><br>
+                    <input type="submit" value="Enviar"></p></th>
                 </form>
                <tr>
                 <th colspan="3"><p class="clausula">
@@ -84,7 +96,7 @@
                 <a href=" https://chupachups.es/" target="_blank"><img src="img/Chupa-chups_logo.png"> </a>
                 <a href="https://www.haribo.com/enGB/home.html" target="_blank"><img src="img/logo-haribo.png"> </a>
                 <a href="https://bollycao.es/" target="_blank"><img src="img/logo-bollycao.png"> </a>
-            <p>PUBLICIDAD</p>
+            <p class="publi">PUBLICIDAD</p>
 
       </aside>
 
