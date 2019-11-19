@@ -184,46 +184,8 @@ iframe{
     margin-bottom: 10px;
     
 }
-input[type=text] {
-  
-  padding: 5px 10px; 
-  margin: 8px 10px;
-    border-bottom-style: groove;
-  border-radius: 4px;
-}
-input[type=date] {
-    padding: 5px 10px;
-    margin: 8px 10px;
-    border-bottom-style: groove;
-  border-radius: 4px;
-}
-input[type=email] {
-    padding: 5px 10px;
-    margin: 8px 10px;
-    border-bottom-style: groove;
-    border-radius: 4px;
-}
-input[type=button]{
-    padding: 5px 10px;
-    margin: 8px 10px;
-    border-bottom-style: groove;
-    border-radius: 4px;    
-}
-input[type=file]{
-    padding: 5px 10px;
-    margin: 8px 10px;
-
-    border-radius: 4px;    
-}
-form textarea{
-    
-    width: 90%;
-    margin-left:40px; 
-    margin-right: 40px;
-    
-}
 p.formulario{
-    text-align: center;
+    text-align: left;
     font-size: 12px;
 }
 p.trabajo{
@@ -236,7 +198,49 @@ p.clausula{
     margin-right: 30px;
     margin-bottom: 10px;
 }
+/* ------TABLA------*/
+/*.tabla {
+    align-content: center;
+    
+} */
+/* ------FORMULARIO ----- */
+input[type=text],input[type=date],input[type=email],input[type=submit],input[type=checkbox] {
+    padding: 5px 10px; 
+    /*margin: 8px 5px;*/
+    border-bottom-style: groove;
+    border-radius: 4px;
+}/*
+input[type=date] {
+    padding: 5px 10px;
+    margin: 8px 5px;
+    border-bottom-style: groove;
+    border-radius: 4px;
+}
+input[type=email] {
+    padding: 5px 10px;
+    margin: 8px 10px;
+    border-bottom-style: groove;
+    border-radius: 4px;
+}
+input[type=submit]{
+    padding: 5px 10px;
+    margin: 8px 10px;
+    border-bottom-style: groove;
+    border-radius: 4px;    
+}*/ /*
+input[type=file]{
+    padding: 5px 10px;
+    margin: 8px 10px;
 
+    border-radius: 4px;    
+}
+textarea.trabajo{
+    
+    width: 90%;
+    margin-left:40px; 
+    margin-right: 40px;
+    
+}
 /* ----ASIDE---*/
 aside{
     background-color: darkgray;
