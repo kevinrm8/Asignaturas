@@ -107,12 +107,13 @@ article p.articulos{
     margin: 20px;
     border: 5px outset hotpink;
     border-radius: 60px;
+    
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
     background-color: skyblue;
 }
-/*Estilos de la galeria*/
+/*------Estilos de la galeria-------*/
 
 .galeria {
 	width: 90%;
@@ -132,14 +133,14 @@ article p.articulos{
 
 .galeria img {
     border: 5px outset black;
-    margin:50px;
+    margin:35px;
     border-radius: 60px;
     
     width: 150px;
     height: 100px;
 }
 
-/*Estilos del modal*/
+/*---------Estilos del modal-----*/
 
 .modal {
 	display: none;
@@ -162,6 +163,7 @@ article p.articulos{
 	text-align: center;
 	margin: 15px 0;
 }
+/*--------Estilos de imagen------*/
 
 .imagen {
 	width: 100%;
@@ -294,31 +296,6 @@ iframe{
     text-align: center;
 }
 
-.formulario{
-    margin-left: 50px;
-    margin-bottom: 10px;
-    
-}
-p.formulario{
-    text-align: center;
-    font-size: 12px;
-}
-p.trabajo{
-    text-align: center;
-    font-size: 25px;
-}
-p.clausula{
-    font-size: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-}
-
-p.curriculum{
-    
-    text-align: center;
-    font-size: 12px;
-}
 /* ------FORMULARIO ----- */
 input[type=text],input[type=email],input[type=submit],input[type=checkbox] {
     padding: 5px 10px; 
@@ -351,6 +328,32 @@ fieldset p.formulario{
     margin-left: 100px;
     border:solid 5px;
     border-color: white;
+}
+/*----Estilos de formulario-----*/
+.formulario{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+}
+p.formulario{
+    text-align: center;
+    font-size: 12px;
+}
+p.trabajo{
+    text-align: center;
+    font-size: 25px;
+}
+p.clausula{
+    font-size: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+p.curriculum{
+    
+    text-align: center;
+    font-size: 12px;
 }
 /* ----ASIDE---*/
 aside{
@@ -399,7 +402,7 @@ footer li{
     
     
 }
-footer img{ /* FALTA PONER A LA DERECHA DEL TODO EL LOGO */
+footer img{
     margin:20px;
     margin-left: 70%;
     height: 40px;
