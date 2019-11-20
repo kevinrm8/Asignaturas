@@ -1,10 +1,9 @@
 body{
-            background-attachment: fixed;
-            font-family: "Times New Roman";
-            font-size: 12px; 
-            margin: 1%;
-            }
-
+    background-attachment: fixed; 
+    font-family: "Times New Roman";
+    font-size: 12px; 
+    margin: 1%;  
+}
 main{
     float: left;
     width: 78%;
@@ -16,12 +15,11 @@ nav{
     color: white;
     padding: 10px;
     border-radius: 60px;
-    border:5px inset black;
+    border:5px solid dimgrey;
 }
 nav ul{
     list-style-type: none;
-    text-align: center;
-    
+    text-align: center;   
 }
 nav li{
     display: inline;
@@ -29,11 +27,9 @@ nav li{
 nav a{
     font-size: 20px; 
     color:white;  
-
     background-color: forestgreen;
     border: 5px outset darkseagreen;
     border-radius: 60px;
-    
 }
 nav a.activo{
     background-color: white;
@@ -44,7 +40,6 @@ nav a:hover{
     color:black;  
 }
 /* ----HEADER-------*/
-
 header{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -52,14 +47,12 @@ header{
     align-content: center;
     background-color: darkgray;
     border-radius: 60px;
-    border: 5px inset black;
-    
+    border: 5px solid dimgrey;
     color:orange;
     text-align: center;
     font-family: "Times New Roman";
     font-size: 50px;
 }
-
 header img.logo{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -67,33 +60,23 @@ header img.logo{
     border:5px outset orange;
     border-radius: 40px;
 }
-
-header img.Chuches1{
-    
+header img.Chuches1{   /* Formato a las imagenes que se encuentran en el header */ 
         width: 150px;
         margin-bottom: 10px;
         margin-top: 10px;
-    
         border:5px outset none;
         border-radius: 60px;
-    
         transform: rotate(-20deg);
-
 }
 header img.Chuches2{
-    
         width: 150px;
         margin-bottom: 10px;
         margin-top: 10px;
-
         border:5px outset none;
         border-radius: 60px;
-    
         transform: rotate(20deg);
-
 }
-
-a{
+a{ /* Estilos de los enlaces*/
     text-decoration: none;
     font-size:20px;
     padding: 10px;
@@ -106,48 +89,38 @@ article p.articulos{
     margin-top: 10px;
     margin: 20px;
     border: 5px outset hotpink;
-    border-radius: 60px;
-    
+    border-radius: 60px;   
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
     background-color: skyblue;
 }
 /*------Estilos de la galeria-------*/
-
 .galeria {
 	width: 90%;
 	margin: auto;
 	list-style: none;
 	padding: 20px;
-	box-sizing: border-box;    
-    
+	box-sizing: border-box;       
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
 .galeria li {
 	margin: 5px;
 }
-
 .galeria img {
     border: 5px outset black;
     margin:35px;
-    border-radius: 60px;
-    
+    border-radius: 60px;   
     width: 150px;
     height: 100px;
 }
-
-/*---------Estilos del modal-----*/
-
-.modal {
+/*---------Estilos de la GaleriaImagen-----*/
+.GaleriaImagen {
 	display: none;
 }
-
-.modal:target {
-	
+.GaleriaImagen:target {	
 	display: block;
 	position: fixed;
 	background: rgba(0,0,0,0.8);
@@ -156,37 +129,31 @@ article p.articulos{
 	width: 100%;
 	height: 100%;
 }
-
-.modal h3 {
-	color: #fff;
+.GaleriaImagen h3 {
+	color: skyblue;
 	font-size: 30px;
 	text-align: center;
 	margin: 15px 0;
 }
 /*--------Estilos de imagen------*/
-
 .imagen {
 	width: 100%;
 	height: 50%;
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 .imagen a {
 	color: #fff;
 	font-size: 40px;
 	text-decoration: none;
 	margin: 0 10px;
 }
-
 .imagen a:nth-child(2) {
 	margin: 0;
 	height: 100%;
 	flex-shrink: 2;
 }
-
 .imagen img {
 	width: 500px;
 	height: 100%;
@@ -194,36 +161,33 @@ article p.articulos{
 	border: 7px solid #fff;
 	box-sizing: border-box;
 }
-
-.cerrar {
+.cerrar { /* Estilo de la tecla para cerrar la ventana de imagen*/
 	display: block;
-	background: #fff;
+	background: skyblue;
 	width: 25px;
 	height: 25px;
 	margin: 15px auto;
 	text-align: center;
 	text-decoration: none;
 	font-size: 25px;
-	color: #000;
+	color: black;
 	padding: 5px;
 	border-radius: 50%;
+    border:3px solid hotpink;
 	line-height: 25px;
 }
 .precio{
     font-size: 20px;
     font-weight: bold;
 }
-
 /* ----------PAGINA--------*/
-section{
-    border:5px inset black; 
+section{ /* Estilos de la seccion de las paginas*/
+    border:5px solid dimgrey; 
     border-radius: 60px;
     background-color: darkgray;
     height: 1000px;
     margin-right:auto; 
-    
 }
-
 article{
     border:5px inset black;
     border-radius: 60px;
@@ -234,7 +198,6 @@ article{
 }
 article h1{
     text-align: center;
-    
     font-size: 50px;
     color:hotpink;
     font-weight: 900;    
@@ -244,8 +207,7 @@ article img.foto{
     margin-top: 100px;
     margin-bottom: 10px;
     margin-right: 50px;
-    border-radius: 60px;
-    
+    border-radius: 60px;  
 }
 .video{
 align-content: center;
@@ -263,7 +225,6 @@ p.Curriculum{
     font-size: 15px;
     font-weight: bolder;
     color:blue;
-    
 }
 article p.titulo{
     color:blue;
@@ -276,16 +237,9 @@ article p.texto{
     font-size: 15px;
     font-family: monospace;
     font-weight: 900;
-    
     margin-left: 150px;
     margin-right: 150px;
-    
     height: auto;
-}
-.video{
-    text-align: center;
-    border: none;
-    background-color: darkgrey;
 }
 iframe{
     margin-left:10px;
@@ -295,7 +249,16 @@ iframe{
     border-radius: 60px;
     text-align: center;
 }
-
+.fecha{
+    font-size: 25px;
+    font-style: normal;
+    color:darkseagreen;
+}
+.historia{
+    font-size: 12px;
+    font-family: cursive;
+    font-weight: 800;    
+}
 /* ------FORMULARIO ----- */
 input[type=text],input[type=email],input[type=submit],input[type=checkbox] {
     padding: 5px 10px; 
@@ -310,16 +273,12 @@ input[type=date] {
     border-radius: 4px;
     width: 50%;
 }
-
 textarea.trabajo{
-    
     width: 90%;
     margin-left:40px; 
-    margin-right: 40px;
-    
+    margin-right: 40px;   
 }
 fieldset p.formulario{
-    
     margin-right: inherit;
 }
 .celda{
@@ -333,7 +292,6 @@ fieldset p.formulario{
 .formulario{
     margin-left: 50px;
     margin-bottom: 10px;
-    
 }
 p.formulario{
     text-align: center;
@@ -349,16 +307,14 @@ p.clausula{
     margin-right: 30px;
     margin-bottom: 10px;
 }
-
 p.curriculum{
-    
     text-align: center;
     font-size: 12px;
 }
 /* ----ASIDE---*/
 aside{
     background-color: darkgray;
-    border: 5px inset black;
+    border: 5px solid dimgrey;
     border-radius: 60px;
     height: 1000px;
     width: 20%;
@@ -379,34 +335,27 @@ aside img{
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 .publi{
-    
     margin-top: 100px;
 }
 /*----------- FOOTER---------*/
 footer{
-    
     background-color: darkgray;
-    border: 5px inset black;
+    border: 5px solid dimgrey;
     border-radius: 60px;
     position: relative;
     display:flex;
     top: 20px;
     width: 100%;
-    
 }
 footer li{
     margin-left: 20px;
-    
-    
 }
 footer img{
     margin:20px;
     margin-left: 70%;
     height: 40px;
-    
     border:5px outset orange;
     border-radius: 40px;
 }
