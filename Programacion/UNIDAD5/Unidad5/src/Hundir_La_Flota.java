@@ -48,7 +48,6 @@ public static Scanner scanner = new Scanner(System.in);
 					else tablero[posx][posy] = "T ";
 					}			
 				trans++;
-
 				}
 			}
 		
@@ -66,7 +65,7 @@ public static Scanner scanner = new Scanner(System.in);
 		int[] pos = new int[2];
 
 			pos[0] = Character.getNumericValue(posicion.charAt(0));
-			pos[1] = Character.getNumericValue(posicion.charAt(2));
+			pos[1] = Character.getNumericValue(posicion.charAt(1));
 
 		return pos;
 	}
