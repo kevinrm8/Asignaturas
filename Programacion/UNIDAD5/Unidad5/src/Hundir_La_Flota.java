@@ -11,6 +11,7 @@ public static Scanner scanner = new Scanner(System.in);
 		String nombre,posicion;
 		
 		int [] vector;
+		
 		//RELLENO EL TABLERO CON -
 		for(j=0;j<tablero.length;j++) {
 			for(i=0;i<tablero[j].length;i++) {
@@ -38,11 +39,13 @@ public static Scanner scanner = new Scanner(System.in);
 			posx = vector[0];
 			posy = vector[1];
 			
-			if(posx+4 >6)
+			if(posy+4 >6)
 				System.out.println("Estas fuera del tablero");
 			else {
-				for(i=0;i<4;i++) {
-					tablero[posx][i] = "T ";
+				for(posy=posy;posy<tablero.length;posy++) {
+					if(tablero[posx][posy] =="T" || tablero[posx+1][posy] =="T" || tablero[posx+2][posy] =="T" || tablero[posx+3][posy] =="T")
+						System.out.println("El espacio esta ocupado");
+					else tablero[posx][posy] = "T ";
 					}			
 				trans++;
 
@@ -59,7 +62,6 @@ public static Scanner scanner = new Scanner(System.in);
 		
 		
 	}
-//HACER METODO BARCO GENERICO Y SEGUN QUE BARCO HAY QUE PONER IR RELLENANDO
 	private static int[] transatlantico(String posicion) {
 		int[] pos = new int[2];
 
