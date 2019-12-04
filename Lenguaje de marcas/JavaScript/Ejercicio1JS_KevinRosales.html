@@ -1,0 +1,113 @@
+<!-- Navegador de preferencia Firefox -->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <style>
+      
+      body{
+        background-attachment: fixed; 
+        font-family: "Times New Roman";
+        font-size: 12px; 
+        margin: 1%;  
+          }
+    section{ 
+        border:5px solid dimgrey; 
+        border-radius: 60px;
+        background-color: darkgray;
+        height: 1000px;
+        margin-right:auto; 
+        text-align: center;
+    }
+    article.menu{
+        width: 40%;
+        border:5px inset blue;
+        background-color: white;
+        border-radius: 60px;
+        text-align: center;
+        float: right;
+        margin: 10px;
+    }
+    article.separacion{
+        width: 40%;
+        border:5px inset blue;
+        background-color: white;
+        border-radius: 60px;
+        float: left;
+        margin:10px;
+        }
+    h1{
+        border:5px inset black;
+        background-color: white;
+        border-radius: 60px;
+
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;    
+          }  
+          
+    ol.botones{
+        text-align: left;
+        margin-left: 50px;
+          }      
+          
+          </style>
+     <!--   PARA EJERCICIO 3 CON FUNCIONES
+      <script>
+          function Boton2(){
+          document.getElementById("parrafo2").innerHTML = "Ahora se ha escrito todo esto.";
+            }
+      
+      </script> -->
+      
+            <meta charset="utf-8">
+    <title>EJERCICIO1-JS</title>
+      
+  </head>
+  <body>
+
+        <section>
+              <h1>
+                    EJERCICIO 1
+                  <br>
+                    Uso de botones en JavaScript
+                </h1>
+            
+             <article class="separacion">
+                 <p id="parrafo1">TITULO 1</p>
+            <p>
+                Bienvenidos al mundo más dulce, la vida más dulce. En Chucherias S.L. somos confiteros desde 1963 y creamos golosinas adaptadas a vuestros gustos: caramelos, regalices, marshmallows… Advertimos que surfeando en nuestra web te puede apetecer mucho saborear una de nuestras golosinas. No te cortes y visita nuestra tienda online.
+            </p>
+                 <p>TITULO 2</p>
+                 <p id="parrafo2">Parrafo 2</p>
+                 
+            </article>
+            
+            <article class="menu">
+            <p> MENÚ </p>
+                <p>Elije la opcion deseada:</p>
+                
+                <ol class="botones">
+                    <li>Modificar el texto del encabezado 1</li>
+                    <button type="button" onclick="myFunction()">Try it</button>
+                    
+                    <li>Modificar el texto del parrafo 2 por otro texto diferente</li>
+                    <button type="button" onclick='document.getElementById("parrafo2").innerHTML = "Ahora se ha escrito todo esto"'>Cambiar Parrafo</button>
+
+                    <li>Modificar el color del encabezado 2 por otro color diferente</li>
+                    <button type="button" onclick="myFunction()">Try it</button>
+
+                    <li>ocular el parrafo</li>
+                    <button type="button" onclick="myFunction()">Try it</button>
+
+                    <li>Mostrar el parrafo 1</li>
+                    <button type="button" onclick="myFunction()">Try it</button>
+                    
+                </ol>
+                
+            </article>
+        </section>
+      
+  </body>
+</html>
