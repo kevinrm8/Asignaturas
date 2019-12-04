@@ -21,6 +21,7 @@ public class Ahorcado {
 			System.out.println("Palabra:");
 			palabra = scanner.nextLine();
 			
+			
 			separada = caracter(palabra);
 			copia = caracter(palabra);
 			
@@ -33,7 +34,7 @@ public class Ahorcado {
 				Palabraoculta(turespuesta);
 			
 				System.out.print("\nIntroduce una letra:");
-				caracter = scanner.next().charAt(0);
+				caracter = scanner.next().toLowerCase().charAt(0);
 			
 				for(int i=0;i<separada.length;i++) {
 					if(caracter == separada[i]) {
@@ -56,13 +57,12 @@ public class Ahorcado {
 			
 			respuesta = pregunta("\nQuiere volver a jugar?",scanner);
 			
+			
 			//RESET DE ACIERTOS E INTENTOS
 			aciertos =0;
 			intentos=0;
 			
 		}while(respuesta != 'n');
-		
-		
 	}
 	
 	// Separo la palabra en caracteres y lo guardo en un char
