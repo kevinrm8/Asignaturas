@@ -65,7 +65,4 @@ public class Conecta4 {
 			}System.out.print("\n");
 		}
 	}
-	
-	
-	
 }
