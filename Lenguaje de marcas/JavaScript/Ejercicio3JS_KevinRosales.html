@@ -56,12 +56,37 @@
           }      
           
           </style>
+     <!--   PARA EJERCICIO 3 CON FUNCIONES -->
+      <script>
+            window.alert("¡Bienvenido/a la página del Ejercicio 3 realizado por Kevin Rosales!");
 
+          function Contenido(){
+            document.getElementById("parrafo1").innerHTML = "He cambiado los parrafos";
+            document.getElementById("parrafo2").innerHTML = "He cambiado los parrafos";
+            }
+          function Titulo(){
+            document.getElementById("titulo1").innerHTML = "Ha cambiado el titulo";
+            document.getElementById("titulo2").innerHTML = "Ha cambiado el titulo";
+          }
+          function Color(){
+            document.getElementById("titulo1").style.color = "red" ;           document.getElementById("titulo2").style.color = "red" ;
+          }
+          function Ocultar(){
+            document.getElementById("parrafo1").innerHTML = "";
+            document.getElementById("parrafo2").innerHTML = "";
+          }
+          function Mostrar(){
+            document.getElementById("parrafo1").innerHTML = "Bienvenidos al mundo más dulce, la vida más dulce. En Chucherias S.L. somos confiteros desde 1963 y creamos golosinas adaptadas a vuestros gustos: caramelos, regalices, marshmallows… Advertimos que surfeando en nuestra web te puede apetecer mucho saborear una de nuestras golosinas. No te cortes y visita nuestra tienda online.";
+            document.getElementById("parrafo2").innerHTML = "Bienvenidos al mundo más dulce, la vida más dulce. En Chucherias S.L. somos confiteros desde 1963 y creamos golosinas adaptadas a vuestros gustos: caramelos, regalices, marshmallows… Advertimos que surfeando en nuestra web te puede apetecer mucho saborear una de nuestras golosinas. No te cortes y visita nuestra tienda online.";
+          }
+          
+      </script> 
+      
             <meta charset="utf-8">
-    <title>EJERCICIO1-JS</title>
+    <title>EJERCICIO3-JS</title>
       
   </head>
-  <body>
+  <body>  
         <section>
               <h1>
                     EJERCICIO 1
@@ -84,25 +109,20 @@
                 <p>Elije la opcion deseada:</p>
                 
                 <ol class="botones">
-                    
                     <li>Modificar el texto del encabezado 1</li>
-                    <button type="button" 
-                            onclick='document.getElementById("titulo1").innerHTML = "Se ha cambiado el titulo 1"'>Cambiar titulo 1</button>
+                    <button type="button" onclick="Titulo()">Cambiar titulos</button>
                     
                     <li>Modificar el texto del parrafo 2 por otro texto diferente</li>
-                    <button type="button" onclick='document.getElementById("parrafo2").innerHTML = "Ahora se ha escrito todo esto"'>Cambiar Parrafo 2</button>
+                    <button type="button" onclick="Contenido()">Cambiar Parrafos</button>
 
                     <li>Modificar el color del encabezado 2 por otro color diferente</li>
-                    <button type="button" 
-                            onclick='document.getElementById("titulo2").style.color = "red"'>Color Titulo 2</button>
+                    <button type="button" onclick="Color()">Color Titulo 2</button>
 
                     <li>ocular el parrafo 1</li>
-                    <button type="button" 
-                            onclick='document.getElementById("parrafo1").innerHTML = ""'>Ocultar parrafo 1</button>
+                    <button type="button" onclick="Ocultar()">Ocultar parrafo</button>
 
-                    <li>Mostrar el parrafo 1</li>
-                    <button type="button" 
-                            onclick='document.getElementById("parrafo1").innerHTML = " Bienvenidos al mundo más dulce, la vida más dulce. En Chucherias S.L. somos confiteros desde 1963 y creamos golosinas adaptadas a vuestros gustos: caramelos, regalices, marshmallows… Advertimos que surfeando en nuestra web te puede apetecer mucho saborear una de nuestras golosinas. No te cortes y visita nuestra tienda online." '>Mostrar parrafo 1</button>
+                    <li>Mostrar el parrafo</li>
+                    <button type="button" onclick="Mostrar()">Mostrar parrafo 1</button>
                     
                 </ol>
                 
