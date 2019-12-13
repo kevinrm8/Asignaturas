@@ -15,9 +15,8 @@ public class Ej82 {
 		int n = scan.nextInt();
 		System.out.print("Los divisores son: ");
 		muestraDivisores(n,n);
-		
-
 	}
+	
 	public static void muestraDivisores(int n, int i) {
 		
 		if(i==1) {
