@@ -13,8 +13,8 @@
           
           function factorial (n){
               var total =1;
-              for (i=0;i<=n;i++){
-                  total =total * i;
+              for (i=1;i<=n;i++){
+                  total = total * i;
               }
               return total;
           }
@@ -23,9 +23,12 @@
       </script>
   </head>
   <body>  
-        
-    
-      
+        <header> Ejercicio 4</header>
+    <p> El resultado es:</p>
+      <p id="p"> </p>
+      <script>
+      document.getElementById("p").innerHTML = fact;
+      </script>
       
   </body>
 </html>
