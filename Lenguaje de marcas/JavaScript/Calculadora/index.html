@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <title>Calculadora</title>
-        <link type="text/css" href="estilo.css" rel="stylesheet">
-    </head>
-    <body onload="inicio()">
-        <script src="operaciones.js"></script>
-            <table class ="calculadora">
-                    <tr>
-                            <td colspan="4"> <span id="resultado"></span></td>
-                    </tr>
-                    <tr>
-                        <td><button id="siete">7</button></td>
-                        <td><button id="ocho">8</button></td>       
-                        <td><button id="nueve">9</button></td>     
-                        <td><button id="divison">/</button></td>
-                    </tr>
-                    <tr>
-                        <td><button id="cuatro">4</button></td>
-                        <td><button id="cinco">5</button></td>       
-                        <td><button id="seis">6</button></td>     
-                        <td><button id="multiplicacion">*</button></td>
-                    </tr>
-                    <tr>
-                        <td><button id="uno">1</button></td>
-                        <td><button id="dos">2</button></td>       
-                        <td><button id="tres">3</button></td>     
-                        <td><button id="resta">-</button></td>
-                    </tr>
-                  <tr>                       
-                        <td><button id="reset">C</button></td>   
-                        <td><button id="cero">0</button></td>     
-                        <td><button id="suma">+</button></td>
-                        <td><button id="igual">=</button></td>
-
-                    </tr>
-                
-            </table>
-    
-    </body>
-    
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+<div class="calculadora">
+	<div class="pantalla">
+		<div id="resultado"></div>
+	</div>
+	<div class="teclas">
+		<div class="numeros">
+			<div>
+		        <button id="num7">7</button>
+		        <button id="num8">8</button>
+		        <button id="num9">9</button>
+	    	</div>
+			<div>
+		        <button id="num4">4</button>
+		        <button id="num5">5</button>
+		        <button id="num6">6</button>
+		    </div>
+		    <div>
+		        <button id="num1">1</button>
+		        <button id="num2">2</button>
+		        <button id="num3">3</button>
+		    </div>
+		    <div>
+                <button id="reset">C</button>
+                <button id="num0">0</button>
+		    </div>
+	    </div>
+		<div class="op">
+		    <button id="suma">+</button>
+		    <button id="resta">-</button>
+		    <button id="div">÷</button>
+		    <button id="mult">x</button>
+	    </div>
+	</div>
+	<div class="sr">
+		<button id="igual">=</button>
+	</div>
+</div>
+<script src="js/script.js"></script>
+</body>
 </html>
