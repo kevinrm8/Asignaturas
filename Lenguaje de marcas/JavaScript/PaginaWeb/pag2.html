@@ -9,14 +9,14 @@
       
             <script src="Ejercicio6JS_KevinRosales.js"></script>
   </head>
-  <body onload ="historia()">
+  <body>
       <script>
       
       </script>
        <nav> <!-- NAVEGADOR --> 
            <ul>
                 <b>
-                <li>  <a href="Index.html">Principal</a></li> 
+                <li>  <a href="Index_sin_popup.html">Principal</a></li> 
                 <li>  <a href="pag1.html">Producto/s</a></li> 
                 <li>  <a class="activo"href="pag2.html">Donde estamos</a></li> 
                 <li>  <a href="pag3.html">Trabaja con nosotros</a></li> 
@@ -45,13 +45,12 @@
             </article>
             <article> <!-- HISTORIA DE LA EMPRESA-->
                 <p class="titulo" id="descubre">Descubre la historia de nuestra empresa con nosotros</p>
-                <button onclick="siguiente()" id="comenzar"> Comenzar </button>
-                
+                <div id="comenzar"> <button onclick="siguiente()"> Comenzar </button> </div> 
                 
                 <p class="titulo" id="titulo"></p>
                 <ul>
                 <h2 class="fecha" id="1992"></h2> 
-                    <p class="historia" id="hist92"></p>
+                <p class="historia" id="hist92"></p>
             
                 <h2 class="fecha" id="1998"></h2>
                 <p class="historia" id="hist98"></p>

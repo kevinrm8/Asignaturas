@@ -91,7 +91,7 @@ function o4() {
 }
 function reset() {
 	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("coma").innerHTML;
+	let sumado = document.getElementById("reset").innerHTML;
 	document.getElementById('resultado').innerHTML = "";
 }
 

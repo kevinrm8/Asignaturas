@@ -1,3 +1,4 @@
+// PAGINA INDEX
 function Diabetico(){  //Pedir acceso a la pagina
     var r = true;
     var r2 = true;
@@ -15,8 +16,12 @@ function Diabetico(){  //Pedir acceso a la pagina
     //HISTORIA PAGINA 2
 var x;
 function siguiente(){ // CADA X SEGUNDOS SE MUESTRA ALGO DE LA HISTORIA
+    //CUANDO SE EJECUTA ELIMINA EL TEXTO Y EL BOTON
     document.getElementById("descubre").innerHTML = "";
-    
+    var quitar = document.getElementById('comenzar'); 
+    quitar.parentNode.removeChild(quitar); 
+
+    // COMEINZA APARECER LA HISOTIRA
     x = setTimeout(function(){titulo("");},1000);
     
     x = setTimeout(function(){Anyo92("");},4000);
@@ -35,7 +40,7 @@ function siguiente(){ // CADA X SEGUNDOS SE MUESTRA ALGO DE LA HISTORIA
     x = setTimeout(function(){hist17("");},21000);
     
 }
-// FUNCIONES PARA QUE SE MUESTRO AL PASO DE LOS SEGUNDOS LO QUE QUEREMOS
+// FUNCIONES PARA QUE SE MUESTRE EL TEXTO CON EL PASO DE LOS SEGUNDOS
 function titulo(){
     document.getElementById("titulo").innerHTML = "HISTORIA DE LA EMPRESA";
 }
@@ -68,4 +73,10 @@ function Anyo17(){
 }
 function hist17(){
     document.getElementById("hist17").innerHTML = "Seguimos creciendo y ampliamos nuestras instalaciones con un centro logistico.";
+}
+
+//FORMULARIO PAGINA 3
+function formulario(){       
+    location.replace("respuesta.html");
+        
 }

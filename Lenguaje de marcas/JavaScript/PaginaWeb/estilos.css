@@ -279,7 +279,8 @@ input[type=text],input[type=email],input[type=submit],input[type=checkbox] {
     padding: 5px 10px; 
     margin: 8px 5px;
     border-bottom-style: groove;
-    border-radius: 4px;
+    border-radius: 4px; 
+    text-align: center;
 }
 input[type=date] {
     padding: 5px 10px;
