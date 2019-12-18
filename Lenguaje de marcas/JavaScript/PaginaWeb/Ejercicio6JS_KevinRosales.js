@@ -3,14 +3,14 @@ function Diabetico(){  //Pedir acceso a la pagina
     var r = true;
     var r2 = true;
     
-     r = confirm("\t\t¡ATENCION!\n Si eres diabetico te aconsejamos no entrar en la pagina.")
+     r = confirm("\t\t¡ATENCION!\n Si eres diabetico te aconsejamos no entrar en la pagina 'CANCELAR'.")
        if(r == false){
                    r2 = confirm("Entro bajo mi responsabilidad");
                        if(r2 == false){
                            location.replace("Diabetico.html");
                        }            
         }else 
-            alert("Bienvenido a la pagina!");    
+            alert("Bienvenido a la pagina! La mejor web de chucherias!");    
 }
 
     //HISTORIA PAGINA 2
@@ -75,8 +75,7 @@ function hist17(){
     document.getElementById("hist17").innerHTML = "Seguimos creciendo y ampliamos nuestras instalaciones con un centro logistico.";
 }
 
-//FORMULARIO PAGINA 3
+//FORMULARIO PAGINA 3 - CAMBIA LA PAGINA CUANDO SE ENVIA EL FORMULARIO
 function formulario(){       
-    location.replace("respuesta.html");
-        
+    location.replace("respuesta.html");     
 }
