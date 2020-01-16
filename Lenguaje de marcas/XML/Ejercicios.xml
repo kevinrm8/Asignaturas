@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJERCICIOS PAGINA abrirllave.com -->
+<!-- 
+<ciudades>
+    <ciudad>
+        <Nombre>Nueva Delhi</Nombre>
+        <pais continente="Ásia">India</pais>
+    </ciudad>
+    <ciudad>
+
+         <Nombre>Lisboa</Nombre>
+        <pais continente="Europa">Portugal</pais>
+    </ciudad>
+    <ciudad>
+
+         <Nombre>El Cairo</Nombre>
+        <pais continente="África">Egipto</pais>
+    </ciudad>
+</ciudades>
+-->
+
+<marcadores>
+    <pagina>
+        <nombre>Abrirllave</nombre>
+        <descripcion>Tutoriales de informatica.</descripcion><URL>http://www.abrirllave.com/</URL>
+    </pagina>    
+    <pagina>
+        <nombre>Wikipedia</nombre>
+        <descripcion>la enciclopedia libre</descripcion><URL>http://www.wikipedia.org/</URL>
+    </pagina>    
+    <pagina>
+        <nombre>W3C</nombre>
+        <descripcion>World Wide Web Consortium</descripcion><URL>http://www.w3.org/</URL>
+    </pagina>
+
+</marcadores>

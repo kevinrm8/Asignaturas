@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- <agenda>
+    <contacto nombre="alumno">
+        <ciudad>Malaga</ciudad>
+        <telefono n="6656565"/>
+        <email>aa@mail.com</email>
+    </contacto>
+</agenda> -->
+
+<!-- LO MISMO PERO LOS DATOS LOS PONEMOS DENTRO DEL ATRIBUTO CONTACTO-->
+
+<agenda>
+    <contacto nombre="alumno" ciudad="Malaga" email="a@mail.com">
+        <telefono n="6656565"/>
+    </contacto>
+</agenda>
