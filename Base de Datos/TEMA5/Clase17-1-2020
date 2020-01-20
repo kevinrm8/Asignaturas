@@ -1,0 +1,14 @@
+FechaPedido		SELECT * FROM pedidos
+2008-07-03		WHERE 	·FechaPedido like '2008%'
+				·FechaPedido >= '2008-01-01'and FechaPedido <=2008-12-31'
+				·FechaPedido between '2008-01-01'and '2008-12-31'
+				·year(FechaPedido) = 2008
+
+LAS 4 FORMAS DE PEDIR LO MISMO. EN ESTE CASO, LOS PEDIDOS DEL AÑO 2008
+
+
+
+				·FechaPedido like '2006%' or '2009'
+				·FechaPedido >= '2006-01-01'and FechaPedido <=2006-12-31' or '2009-01-01'and FechaPedido <=2009-12-31'
+				·FechaPedido between ('2006-01-01'and '2006-12-31') or ('2009-01-01'and '2009-12-31')
+				·year(FechaPedido) = 2006 or 2009
