@@ -1,0 +1,8 @@
+<!ELEMENT especie ( nombre,variedad,(origen)+color_fruto,(maduracion)+,(riesgo)?,(precio)?)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT variedad(#PCDATA)>
+<!ELEMENT origen(#PCDATA)>
+<!ELEMENT color_fruto(#PCDATA)>
+<!ELEMENT maduracion(#PCDATA)>
+<!ELEMENT riego(#PCDATA)>
+<!ELEMENT precio(#PCDATA)>

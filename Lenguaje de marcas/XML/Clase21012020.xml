@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <arbol>
+        <especie>
+            <nombre>Litchi</nombre>
+            <variedad></variedad>
+            <origen></origen>
+            <origen></origen>
+            <color_fruto></color_fruto>
+            <maduracion></maduracion>
+            <riego></riego>
+            <precio></precio>
+        </especie>
+        
+    </arbol>
