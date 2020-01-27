@@ -20,4 +20,11 @@ public partial class MainWindow : Gtk.Window
         md.Run();
         md.Destroy(); /* para cuando le demos Aceptar se cierre la ventana*/
     }
+
+    protected void OnBSalirClicked(object sender, EventArgs e)
+    {
+        this.Destroy();
+    }
+
+
 }
