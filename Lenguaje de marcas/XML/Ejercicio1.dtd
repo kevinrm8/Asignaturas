@@ -1,0 +1,6 @@
+<!ELEMENT articulos (nombre,precio,codigo,fabricante)>
+<!ELEMENT articulo(#PCDATA)>
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT precio(#PCDATA)>
+<!ELEMENT codigo(#PCDATA)>
+<!ELEMENT fabricante(#PCDATA)>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulos SYSTEM "Ejercicio1.dtd">
+
+    <articulos>
+        <articulo>
+            <nombre>Articulo1</nombre>
+            <precio>20€</precio>
+            <codigo>01</codigo>
+            <fabricacion>A</fabricacion>
+        </articulo>
+        
+        <articulo>
+            <nombre>Articulo2</nombre>
+            <precio>30€</precio>
+            <codigo>02</codigo>
+            <fabricacion>B</fabricacion>
+        </articulo>
+    </articulos>

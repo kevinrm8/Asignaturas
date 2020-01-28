@@ -36,5 +36,7 @@ public class Ej88 {
 			}
 
 			}
-		}
+		if(cont<=0)
+			System.out.println("No tienes acceso a la pagina");	
+	}
 }

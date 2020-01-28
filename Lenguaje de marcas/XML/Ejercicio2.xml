@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Calificaciones>
+        <Alumno>
+            <Datos>
+            <nombre>Felipe</nombre>
+            <apellidos>Pascual</apellidos>
+            </Datos>
+            <Materia>   
+            <OACE>
+                <Cuestionario>4</Cuestionario>
+                <Tareas>8</Tareas>
+            </OACE>
+            <EFE>
+                <Cuestionario>7</Cuestionario>
+                <tareas>6</tareas>
+            </EFE>
+            </Materia>
+        </Alumno>
+        
+        <Alumno>
+            <Datos>
+                <nombre>Maria</nombre>
+                <apellidos>Garcia</apellidos>
+            </Datos>
+            <Materia>   
+            <OACE>
+                <Cuestionario>9</Cuestionario>
+                <Tareas>2</Tareas>
+            </OACE>
+            <EFE>
+                <Cuestionario>9</Cuestionario>
+                <tareas>6</tareas>
+            </EFE>
+            </Materia>
+        </Alumno>
+        
+        <Alumno>
+            <Datos>
+                <nombre>kevin</nombre>
+                <apellidos>Rosales</apellidos>
+            </Datos>
+            <Materia>   
+            <OACE>
+                <Cuestionario>10</Cuestionario>
+                <Tareas>8</Tareas>
+            </OACE>
+            <EFE>
+                <Cuestionario>2</Cuestionario>
+                <tareas>4</tareas>
+            </EFE>
+            </Materia>
+        </Alumno>
+        
+    </Calificaciones>
