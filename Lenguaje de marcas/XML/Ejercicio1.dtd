@@ -1,5 +1,5 @@
-<!ELEMENT articulos (nombre,precio,codigo,fabricante)>
-<!ELEMENT articulo(#PCDATA)>
+<!ELEMENT articulos(articulo)+>
+<!ELEMENT articulo(nombre,precio,codigo,fabricante)>
 <!ELEMENT nombre(#PCDATA)>
 <!ELEMENT precio(#PCDATA)>
 <!ELEMENT codigo(#PCDATA)>
