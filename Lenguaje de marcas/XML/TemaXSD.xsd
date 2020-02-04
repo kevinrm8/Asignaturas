@@ -1,0 +1,10 @@
+/* CLASE DEL DIA 4/2/2020 */
+
+<xs:schema></xs:schema>/* Prefijo utilizado, tambien se suele usar xsd */
+<xs:element Nombre Tipo Valor/> /* Declaracion de elemento, hay que especificar el tippo */ 
+<xs:simpleType name="Tcat1"></xs:simpleType>
+
+/* MIRAR LIBRO. elementos, elementos complejos, y mediante referencias*/
+
+
+
