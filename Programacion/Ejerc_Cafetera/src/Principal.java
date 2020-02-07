@@ -25,23 +25,27 @@ public class Principal {
 		opc = scanner.nextInt();
 		
 		switch (opc){
-		case 0: System.out.println("Con cuanto quiere rellenarla?:");
-				X = scanner.nextInt();
-				cafet1.llenar_cafetera(X);
+		case 0:
+			System.out.println("Con cuanto quiere rellenarla?:");
+			X = scanner.nextInt();
+			cafet1.llenar_cafetera(X);
 			break;
-		case 1: System.out.println("Cuanto quiere? En cl");
-		X = scanner.nextInt();
-		cafet1.servir_taza(X);
+		case 1: 
+			System.out.println("Cuanto quiere? En cl");
+			X = scanner.nextInt();
+			cafet1.servir_taza(X);
 			break;
-		case 2: System.out.println("Cuanto quiere agregar a la cafetera? En cl");
-		X = scanner.nextInt();
-		cafet1.agregar_cafe(X);
+		case 2:
+			System.out.println("Cuanto quiere agregar a la cafetera? En cl");
+			X = scanner.nextInt();
+			cafet1.agregar_cafe(X);
 			break;
-		case 3: cafet1.vaciar_cafetera();
+		case 3:
+			cafet1.vaciar_cafetera();
 			break;
-			default:
-				System.out.println("Opcion incorrecta");
-				break;
+		default:
+			System.out.println("Opcion incorrecta");
+			break;
 		
 		}
 		}
