@@ -8,6 +8,7 @@ namespace CBingo {
 
         private IList<int> bolas = new List<int>();
         private Random r = new Random();
+
         public Bombo() { 
         
             for(int bola = 1; bola <= 90; bola++) {
@@ -17,11 +18,10 @@ namespace CBingo {
         }
         public int sacarBola()
         {
-            int Aleatorio = r.Next(1,90);
+            int Aleatorio = r.Next(bolas.Count);
             int bola = bolas[Aleatorio];
             bolas.RemoveAt(Aleatorio);
             return bola;
-
         }
 
     }

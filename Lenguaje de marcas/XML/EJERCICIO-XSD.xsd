@@ -1,0 +1,38 @@
+<!-- ESTO ES EL XML -->
+
+<!--
+
+<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns: xsi="http.www.w3.org/2001/XML.Schema.instance" xsi:noNamespaceSchemaLocation="fichas.xsd">
+    <ficha numero ="1">
+        <nombre>Ana Sanz Tin</nombre>
+        <edad>22</edad>
+    </ficha>
+    <ficha numero="2">
+        <nombre>Iker Rubia Mol</nombre>
+        <edad>23</edad>
+    </ficha>
+</fichas>
+-->
+
+<!-- A partir de lo anterior hay que hacer el XSD -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="fichas">ELEMENTO COMPLEJO
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ficha" maxOccurs="unbounded">COMPLEJO
+                <xs:complexType>
+                    <xs:sequence>DEBEN SEGUIR ORDEN Y ESTAR 2
+                        <xs:element name="nombre" type ="xs:string"/>SIMPLE
+                        <xs:element name="edad" type="xs:integer"/>SIMPLE
+                    </xs:sequence>    
+                <xs:attribute name="numero" type ="xs:integer"/>
+                </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

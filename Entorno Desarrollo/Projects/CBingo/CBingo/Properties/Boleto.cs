@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using Gtk;
 
 namespace CBingo
-{
-    public class Panel
-    {
-        /* Tamaño de la raiz*/
-        private static uint rows = 9;
-        private static uint columns = 10;
+{ 
+    public class Boleto {
+
+        private static uint rows = 2;
+        private static uint columns = 2;
 
         private IList<Button> buttons = new List<Button>();
 
-        public Panel(VBox vbox1)
-        { 
+
+        public Boleto(VBox vbox2)
+        {
             Table table = new Table(rows, columns, true);
             int index = 0;
 
-            for (int row=0; row<rows; row++)
-                for (int column=0; column<columns; column++)
+            for (int row = 0; row < rows; row++)
+                for (int column = 0; column < columns; column++)
                 {
                     index++;
                     Button button = new Button();
@@ -26,15 +26,10 @@ namespace CBingo
                     buttons.Add(button);
                     button.Label = index.ToString();
                 }
-            vbox1.Add(table);
+            vbox2.Add(table);
             table.ShowAll();
         }
 
-        public void Marcar(int numero) {
-
-            buttons[numero-1].ModifyBg(StateType.Normal, new Gdk.Color(0,255,0));
-
-        }
 
     }
 

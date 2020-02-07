@@ -1,4 +1,4 @@
-<!ELEMENT especie ( nombre,variedad,(origen)+color_fruto,(maduracion)+,(riesgo)?,(precio)?)>
+<!ELEMENT especie ( nombre,variedad,(origen)+,color_fruto,(maduracion)+,(riesgo)?,(precio)?)>
 <!ELEMENT nombre(#PCDATA)>
 <!ELEMENT variedad(#PCDATA)>
 <!ELEMENT origen(#PCDATA)>

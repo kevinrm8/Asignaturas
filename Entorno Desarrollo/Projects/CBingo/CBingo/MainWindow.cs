@@ -4,15 +4,21 @@ using CBingo;
 
 public partial class MainWindow : Gtk.Window
 {
+    //Panel panel;
+    //Bombo bombo = new Bombo();
+
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
-        Build();
-        Panel panel = new Panel(vbox1);
-        Bombo Bombo = new Bombo();
-      //  BJugar.Clicked += delegate {
+    Build();
 
-        //    int numero = Bombo.sacarBola();
-        //};
+        Panel panel = new Panel(vbox1);
+        Bombo bombo = new Bombo();
+
+        BJugar.Clicked += delegate {
+
+            int numero = bombo.sacarBola();
+            panel.Marcar(numero);
+        }; 
     }
 
 
@@ -22,15 +28,10 @@ public partial class MainWindow : Gtk.Window
         a.RetVal = true;
     }
 
-    protected void OnBJugarClicked(object sender, EventArgs e)
+  /*  protected void OnBJugarClicked(object sender, EventArgs e)
     {
+        int numero = bombo.sacarBola();
+        panel.Marcar(numero);
 
-        Bombo Bombo = new Bombo();
-
-        int numero = Bombo.sacarBola();
-
-        //Random r = new Random();
-
-
-    }
+    } */
 }

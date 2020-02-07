@@ -3,9 +3,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="CBingo/MainWindow.cs">
     <Files>
       <File FileName="CBingo/Program.cs" Line="17" Column="1" />
-      <File FileName="CBingo/Panel.cs" Line="22" Column="29" />
-      <File FileName="CBingo/MainWindow.cs" Line="8" Column="6" />
-      <File FileName="CBingo/Bombo.cs" Line="21" Column="1" />
+      <File FileName="CBingo/Panel.cs" Line="10" Column="6" />
+      <File FileName="CBingo/Bombo.cs" Line="17" Column="27" />
+      <File FileName="CBingo/MainWindow.cs" Line="10" Column="25" />
+      <File FileName="CBingo/Boleto.cs" Line="14" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

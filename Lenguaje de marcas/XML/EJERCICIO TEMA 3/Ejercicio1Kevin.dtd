@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria> 
+    <libro>
+        <titulo>LM</titulo>
+        <autor>Autor1</autor>
+        <autor>Autor2</autor>
+        <ISBN></ISBN>
+        <pagina>158</pagina>
+        <precio>15</precio>
+    </libro>
+    <libro>
+        <titulo>XML</titulo>
+        <autor>Autor1</autor>
+        <ISBN></ISBN>
+        <pagina>278</pagina>
+        <precio>30
+        
+        </precio>
+    </libro>
+</libreria>
+
+
+<!ELEMENT libreria (libro)+>
+<!ELEMENT libro(titulo,(autor)+,ISBN,pagina,precio)>
+<!ELEMENT precio (precio_online,precio_papel)
+
+<!ELEMENT libro(#PCDATA)>
+<!ELEMENT titulo(#PCDATA)>
+<!ELEMENT autor(#PCDATA)>
+<!ELEMENT ISBN(#PCDATA)>
+<!ELEMENT pagina(#PCDATA)>
+<!ELEMENT precio(#PCDATA)>
+<!ELEMENT precio_online(#PCDATA)>
+<!ELEMENT precio_papel(#PCDATA)>
+
+
