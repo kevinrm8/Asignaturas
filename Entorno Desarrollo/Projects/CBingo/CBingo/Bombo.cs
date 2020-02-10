@@ -11,7 +11,7 @@ namespace CBingo {
 
         public Bombo() { 
         
-            for(int bola = 1; bola <= 90; bola++) {
+            for(int bola = 1; bola <= 90; bola++) { // CANTIDAD DE BOLAS
                 bolas.Add(bola);
 
             }//FIN DEL FOR

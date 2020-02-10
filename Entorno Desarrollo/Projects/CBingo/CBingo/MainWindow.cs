@@ -4,15 +4,15 @@ using CBingo;
 
 public partial class MainWindow : Gtk.Window
 {
-    //Panel panel;
-    //Bombo bombo = new Bombo();
+    Panel panel;
+    Bombo bombo = new Bombo();
 
-    public MainWindow() : base(Gtk.WindowType.Toplevel)
+    public MainWindow(): base(Gtk.WindowType.Toplevel)
     {
     Build();
 
-        Panel panel = new Panel(vbox1);
-        Bombo bombo = new Bombo();
+        panel = new Panel(vbox1);
+        //Bombo bombo = new Bombo();
 
         BJugar.Clicked += delegate {
 
@@ -28,10 +28,10 @@ public partial class MainWindow : Gtk.Window
         a.RetVal = true;
     }
 
-  /*  protected void OnBJugarClicked(object sender, EventArgs e)
+    protected void OnBJugarClicked(object sender, EventArgs e)
     {
         int numero = bombo.sacarBola();
         panel.Marcar(numero);
 
-    } */
+    } 
 }

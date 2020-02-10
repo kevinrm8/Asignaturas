@@ -7,8 +7,8 @@ namespace CBingo
     public class Panel
     {
         /* Tamaño de la raiz*/
-        private static uint rows = 9;
-        private static uint columns = 10;
+        private static uint rows = 9; // CANTIDAD DEL BOMBO
+        private static uint columns = 10; 
 
         private IList<Button> buttons = new List<Button>();
 
