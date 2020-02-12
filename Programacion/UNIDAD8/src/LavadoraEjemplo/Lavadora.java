@@ -1,3 +1,4 @@
+package LavadoraEjemplo;
 import java.util.Random;
 
 public class Lavadora {

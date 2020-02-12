@@ -1,3 +1,4 @@
+package LavadoraEjemplo;
 import java.util.*;
 
 public class Prin_Lavadora {
