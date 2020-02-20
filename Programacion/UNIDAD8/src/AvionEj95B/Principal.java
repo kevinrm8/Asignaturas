@@ -8,7 +8,7 @@ public class Principal {
 
 	public static Scanner scanner = new Scanner(System.in);
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		
 		ArrayList<Vuelos> Billetes = new ArrayList<Vuelos>();
@@ -23,6 +23,7 @@ public class Principal {
 			System.out.println("1-Comprar billete de avion");
 			System.out.println("2-Cancelar billete de avion");
 			System.out.println("3-Estado de mi reserva");
+			System.out.println("4-Duracion del vuelo");
 			System.out.println("S-Salir");
 			System.out.println("OPCION:");
 
@@ -43,6 +44,9 @@ public class Principal {
 			case "3": 
 					estado(Billetes);
 				break;
+			case "4": 
+					Duracion(Billetes);
+			break;
 
 			case "S":
 				System.out.println("Paco Airways no le agradece su confianza. Gracias por nada.");
@@ -53,21 +57,20 @@ public class Principal {
 	}
 
 
-	private static void CrearBillete(ArrayList<Vuelos> Billetes) {
+	private static void CrearBillete(ArrayList<Vuelos> Billetes) throws Exception {
 		String MiBillete;
 		String[] separado;
 		
-		System.out.println("Introduzca origen, destino, dia de ida y dia de vuelta separados por @:");
+		System.out.println("Introduzca origen, destino, Fecha Salida, Hora salida, Fecha Vuelta, Hora Vuelta separados por @:");
 		MiBillete = scanner.nextLine();
 		separado = MiBillete.split("@");
 		
 		
-		Vuelos billete = new Vuelos(separado[0],separado[1],separado[2],separado[3]);
+		Vuelos billete = new Vuelos(separado[0],separado[1],separado[2],separado[3],separado[4],separado[5]);
 		Billetes.add(billete);
 		System.out.println("Billete comprado!\n");
 		
 	}
-	
 	
 	private static void cancelar(ArrayList<Vuelos> billetes) {
 		
@@ -108,6 +111,17 @@ public class Principal {
 		}
 		
 	}
+	
+	private static void Duracion(ArrayList<Vuelos> billetes) {
+		
+		int dura;
+		System.out.println("Vuelo a mirar:");
+		int vuel= scanner.nextInt();
+		scanner.nextLine();
+		
+		System.out.println("Tu vuelo durara: "+billetes.get(vuel-1).Estancia()+" dias\n");
+	}
+	
 
 	
 }

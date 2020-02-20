@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Ejemplo XMLCopyEditor xsl"?>
+<TIENDA>
+<RAQUETA>
+  <MARCA>Marca1</MARCA>
+  <MODELO>Modelo1</MODELO>
+  <AÑO>2001</AÑO>
+</RAQUETA>
+<RAQUETA>
+  <MARCA>Marca2</MARCA>
+  <MODELO>Modelo2</MODELO>
+  <AÑO>2002</AÑO>
+</RAQUETA>
+</TIENDA>
