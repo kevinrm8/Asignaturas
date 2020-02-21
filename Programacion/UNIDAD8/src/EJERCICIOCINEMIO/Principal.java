@@ -2,8 +2,6 @@ package EJERCICIOCINEMIO;
 
 import java.util.*;
 
-import KINEPOLIS.Cliente;
-
 public class Principal {
 
 	public static Scanner scanner = new Scanner(System.in);
@@ -100,14 +98,19 @@ public class Principal {
 	}
 
 	private static void Estado(HashMap<Integer, Queue> salas) {
-
+			
+		Queue<Cliente> c1;
+		
 		for (int i = 0; i < salas.size(); i++) {
-			Queue c1 = salas.get(i);
+			
+			c1 = salas.get(i);
+			
 			System.out.println("Clientes de la sala " + (i + 1) + ":");
+			
 			Iterator iter = c1.iterator();
 			while (iter.hasNext()) {
 				Cliente cli1 = (Cliente) iter.next();
-				System.out.println("El " + cli1.getNombre() + " y " + cli1.getEdad());
+				cli1.Mostrar();
 			}
 
 		}

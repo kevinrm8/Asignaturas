@@ -17,6 +17,9 @@ public class Cliente {
 	public int getEdad() {
 		return edad;
 	}
+	public void Mostrar() {
+		System.out.println(Nombre+","+edad);
+	}
 	
 }
 

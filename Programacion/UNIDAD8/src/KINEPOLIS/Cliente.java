@@ -3,12 +3,10 @@ package KINEPOLIS;
 public class Cliente {
 	String nombre;
 	int edad;
-
 	
 	public Cliente(String nombre,int edad){
 		this.nombre = nombre;
 		this.edad = edad;
-
 	}
 	
 	public String getNombre(){
@@ -17,6 +15,9 @@ public class Cliente {
 	public int getEdad() {
 		return edad;
 	}
-	
+
+	public void mostrar() {
+		System.out.println(nombre+","+edad);
+	}
 	
 }
