@@ -10,7 +10,7 @@ public class Principal {
 		
 
 		
-		System.out.println("Bienvenido a Kinepolis, Â¿de cuantas salas dispone tu cine?");
+		System.out.println("Bienvenido a Kinepolis, ¿de cuantas salas dispone tu cine?");
 		cant = scanner.nextInt();
 		
 		HashMap<Integer,Queue> Sala = new HashMap<Integer,Queue>();
@@ -31,7 +31,7 @@ public class Principal {
 			
 		switch(opc) {
 			case 1: 
-				System.out.println("Sala donde aÃ±adir personas:");
+				System.out.println("Sala donde añadir personas:");
 				anyadir = scanner.nextInt();scanner.nextLine();	
 									
 					System.out.println("Nombre: ");
@@ -40,7 +40,7 @@ public class Principal {
 					edad = scanner.nextInt();
 
 					
-					Sala.get(anyadir).add(new Cliente(nombre,edad));
+					//Sala.get(anyadir).add(new Cliente(nombre,edad));
 
 			
 							
@@ -50,6 +50,7 @@ public class Principal {
 			case 3: 
 				System.out.println("Informacion de la sala: ");
 				info = scanner.nextInt();scanner.nextLine();
+				
 				Queue c1 = Sala.get(info);
 				Iterator iter = c1.iterator();
 				while (iter.hasNext()) {
@@ -67,16 +68,12 @@ public class Principal {
 		}	
 	
 		}while(opc!=5);
-		
-		
-		
+			
 		
 	}
 
 
 
-
-	
 
 
 }
