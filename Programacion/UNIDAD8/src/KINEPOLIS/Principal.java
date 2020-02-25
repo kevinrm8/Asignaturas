@@ -10,7 +10,7 @@ public class Principal {
 		int opc, cant, anyadir, edad, info;
 		String nombre;
 
-		System.out.println("Bienvenido a Kinepolis, ¿de cuantas salas dispone tu cine?");
+		System.out.println("Bienvenido a Kinepolis, Â¿de cuantas salas dispone tu cine?");
 		cant = scanner.nextInt();
 
 		ArrayList<Queue<Cliente>> Colacine = new ArrayList<Queue<Cliente>>();
@@ -29,6 +29,7 @@ public class Principal {
 			System.out.println("5-Salir");
 			opc = scanner.nextInt();
 			scanner.nextLine();
+			// opc = Integer.parseInt(scan.nextLine(); PARA HACERLO EN UNA LINEA Y PONER 2 LINEAS PARA LEER NUMEROS
 
 			switch (opc) {
 			case 1:
@@ -52,12 +53,10 @@ public class Principal {
 
 	}
 
-
-
 	private static void Encolar(ArrayList<Queue<Cliente>> colacine) {
 		int oper, edad;
 		String nombre;
-		System.out.println("¿Sobre que sala desea realizar la operacion?");
+		System.out.println("ï¿½Sobre que sala desea realizar la operacion?");
 		oper = scanner.nextInt();
 		scanner.nextLine();
 
@@ -79,7 +78,7 @@ public class Principal {
 	}
 	private static void Desencolar(ArrayList<Queue<Cliente>> colacine) {
 		int oper;
-		System.out.println("¿Sobre que sala desea realizar la operacion?");
+		System.out.println("ï¿½Sobre que sala desea realizar la operacion?");
 		oper = scanner.nextInt();
 		scanner.nextLine();
 
@@ -96,7 +95,7 @@ public class Principal {
 	}
 	private static void Informacion(ArrayList<Queue<Cliente>> colacine) {
 		int oper;
-		System.out.println("¿Sobre que sala desea realizar la operacion?");
+		System.out.println("ï¿½Sobre que sala desea realizar la operacion?");
 		oper = scanner.nextInt();
 		scanner.nextLine();
 
