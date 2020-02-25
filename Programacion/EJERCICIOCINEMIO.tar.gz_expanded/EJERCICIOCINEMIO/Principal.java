@@ -9,15 +9,17 @@ public class Principal {
 	public static void main(String[] args) {
 		int opc, cant_salas;
 
-		System.out.println("Bienvenido a Kinepolis, ¿de cuantas salas dispone tu cine?");
+		System.out.println("Bienvenido a Kinepolis, ï¿½de cuantas salas dispone tu cine?");
 		cant_salas = scanner.nextInt();
 		scanner.nextLine();
 
 		HashMap<Integer, Queue> Salas = new HashMap<Integer, Queue>();
 
 		for (int i = 0; i < cant_salas; i++) {
-			Queue<Cliente> SalaCine = new LinkedList<Cliente>();
-			Salas.put(i, SalaCine);
+			//Queue<Cliente> SalaCine = new LinkedList<Cliente>();
+			//Salas.put(i, SalaCine);
+			
+			Salas.put(i, new LinkedList<Cliente>());
 		}
 
 		System.out.println("---- Menu KINEPOLIS ----");
@@ -58,13 +60,13 @@ public class Principal {
 
 		System.out.println("Sobre que sala desea realizar la operacion?");
 		oper = scanner.nextInt();
-		scanner.nextLine(); // SALA DONDE AÑADIR CLIENTES
+		scanner.nextLine(); // SALA DONDE Aï¿½ADIR CLIENTES
 
 		while (oper > salas.size()) {
 			System.out.println(
-					"Valor de sala introducido erróneo. Introduzca valores desde el 1 hasta el " + salas.size());
+					"Valor de sala introducido errï¿½neo. Introduzca valores desde el 1 hasta el " + salas.size());
 			oper = scanner.nextInt();
-			scanner.nextLine(); // SALA DONDE AÑADIR CLIENTES
+			scanner.nextLine(); // SALA DONDE Aï¿½ADIR CLIENTES
 
 		}
 		System.out.println("Introduzca el nombre del nuevo cliente para la sala " + oper + ":"); // PREGUNTO DATOS
@@ -74,7 +76,7 @@ public class Principal {
 		edad = scanner.nextInt();
 		scanner.nextLine();
 
-		salas.get(oper - 1).add(new Cliente(nombre, edad)); // AÑADO EN EL HASHMAP LA COLA CON EL CLIENTE
+		salas.get(oper - 1).add(new Cliente(nombre, edad)); // Aï¿½ADO EN EL HASHMAP LA COLA CON EL CLIENTE
 
 	}
 
@@ -83,13 +85,13 @@ public class Principal {
 
 		System.out.println("Sobre que sala desea realizar la operacion?");
 		oper = scanner.nextInt();
-		scanner.nextLine(); // SALA DONDE AÑADIR CLIENTES
+		scanner.nextLine(); // SALA DONDE Aï¿½ADIR CLIENTES
 
 		while (oper > salas.size()) {
 			System.out.println(
-					"Valor de sala introducido erróneo. Introduzca valores desde el 1 hasta el " + salas.size());
+					"Valor de sala introducido errï¿½neo. Introduzca valores desde el 1 hasta el " + salas.size());
 			oper = scanner.nextInt();
-			scanner.nextLine(); // SALA DONDE AÑADIR CLIENTES
+			scanner.nextLine(); // SALA DONDE Aï¿½ADIR CLIENTES
 
 		}
 
@@ -122,13 +124,13 @@ public class Principal {
 
 		System.out.println("Sobre que sala desea realizar la operacion?");
 		oper = scanner.nextInt();
-		scanner.nextLine(); // SALA DONDE AÑADIR CLIENTES
+		scanner.nextLine(); // SALA DONDE Aï¿½ADIR CLIENTES
 
 		while (oper > salas.size()) {
 			System.out.println(
-					"Valor de sala introducido erróneo. Introduzca valores desde el 1 hasta el " + salas.size());
+					"Valor de sala introducido errï¿½neo. Introduzca valores desde el 1 hasta el " + salas.size());
 			oper = scanner.nextInt();
-			scanner.nextLine(); // SALA DONDE AÑADIR CLIENTES
+			scanner.nextLine(); // SALA DONDE Aï¿½ADIR CLIENTES
 
 		}
 
