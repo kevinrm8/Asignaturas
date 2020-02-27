@@ -26,4 +26,6 @@ Select sum(PrecioUnidad * Cantidad) From DetallePedidos Where CodigoPedido = 15;
 Select count(CodigoEmpleado) From Empleados;
 Select count(CodigoEmpleado) From Empleados Where CodigoJefe is not null;
 Select count(CodigoPedido) From Pedidos Where FechaPedido like '2007%';
-Select avg(datediff(FechaEntrega,FechaPedido)) From Pedidos where FechaEntrega is not null; /* Con el avg sale la media de dias que tardan en entregar, si quitamos el avg sale lo que tarda cada pedido en entregrse*/
+Select avg(datediff(FechaEntrega,FechaPedido)) From Pedidos where FechaEntrega is not null; /* Con el avg sale la media de dias que tardan en entregar,
+ si quitamos el avg sale lo que tarda cada pedido en entregrse*/
+ 
