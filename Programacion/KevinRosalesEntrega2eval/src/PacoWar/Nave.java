@@ -23,6 +23,7 @@ public class Nave {
 	}
 	
 	public void Nuevo_Trip(String NomNave) { // CREO EL TRIPULANTE EN LA NAVE QUE ME PASAN
+		//PASARLE EL TRIPULANTE - 
 		String NomTrip,Rango;
 		int EdadTrip;
 		
