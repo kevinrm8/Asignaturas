@@ -115,7 +115,7 @@ public class Principal {
 
 		System.out.println("Prestamos:");
 		while (PreAux.hasNext()) {
-			
+
 		}
 
 	}
@@ -125,15 +125,14 @@ public class Principal {
 		Alumnos alu = null;
 		Biblioteca Libro;
 		String dni, titulo;
-		
-		
+
 		System.out.println("Introduzca DNI del alumno:");
 		dni = scanner.nextLine();
-		
+
 		Iterator<Alumnos> AluAux = al.iterator();
 		while (AluAux.hasNext()) {
 			alu = AluAux.next();
-			if(AluAux.next().getDniAlu().equals(dni)) {
+			if (AluAux.next().getDniAlu().equals(dni)) {
 				break;
 			}
 		}
@@ -145,14 +144,13 @@ public class Principal {
 		while (LibroAux.hasNext()) {
 			Libro = LibroAux.next();
 			if (Libro.getTitulo().equals(titulo)) { // PARA SABER SI EXISTE EL LIBRO
-				if(Libro.getDisponible().equals("DISP")) {
+				if (Libro.getDisponible().equals("DISP")) {
 					Libro.setPrest();
-					Prestamos Pr1 = new Prestamos(alu,Libro);
+					Prestamos Pr1 = new Prestamos(alu, Libro);
 					prestados.add(Pr1);
-				}//GET DISPONIBLE
+				} // GET DISPONIBLE
 			} else
 				System.out.println("Este libro no existe");
 		}
-
 	}
 }
