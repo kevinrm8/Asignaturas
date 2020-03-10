@@ -7,7 +7,11 @@ public class Animales {
 
 	public Animales(String nombre, String tipo, int peso) {
 		this.nombre = nombre;
-		this.tipo = tipo;
+		if(tipo.equals("t")) {
+			this.tipo = "tigre";
+		}else 
+			this.tipo="leon";
+		
 		this.peso = peso;
 	}
 

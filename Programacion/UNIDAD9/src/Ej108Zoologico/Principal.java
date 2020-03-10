@@ -6,49 +6,54 @@ public class Principal {
 
 	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
-		int opc;
+		int opc=0;
 
 		ArrayList<Animales> Animal = new ArrayList<Animales>();
+		do {
+			try {
+			opc = menu();
+			
+			if(opc<0 || opc>6) { // VALIDAR SI ESTA DENTRO DE RANGO
+				throw new Exception("Fuera de rango");
+			}
+			switch (opc) {
+			case 1:
+				Alta_animal(Animal);
+				break;
+			case 2:
+				Baja_animal(Animal);
+				break;
+			case 3:
+				Modificar_peso(Animal);
+				break;
+			case 4:
+				Listado_animales(Animal);
+				break;
+			}
+			}catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
+		} while (opc != 5);
 
-		menu();
-		try {
-
-			do {
-				opc = scanner.nextInt();
-				scanner.nextLine();
-				switch (opc) {
-				case 1:
-					Alta_animal(Animal);
-					break;
-				case 2:
-					Baja_animal(Animal);
-					break;
-				case 3:
-					Modificar_peso(Animal);
-					break;
-				case 4:
-					Listado_animales(Animal);
-					break;
-				}
-				menu();
-				opc = scanner.nextInt();
-				scanner.nextLine();
-
-			} while (opc != 5);
-		} catch (Exception e) {
-			System.out.println("No es un numero");
-		}
 		System.out.println("Gracias por visitar el Zoo");
 	}
 
-	public static void menu() throws Exception {
+	public static int menu() throws Exception { // MENU
+		Scanner scanner = new Scanner(System.in);
+			int opc= 0;
+			System.out.println("Bienvenido al Zoo Tigres & leones\n--------------------");
+			System.out.println("1-Dar de alta animal");
+			System.out.println("2-Dar de baja animal");
+			System.out.println("3-Modificar peso");
+			System.out.println("4-Listado animales");
+			System.out.println("5-Salir");
+			try {
+				opc = Validar_Entero(); // COMRPOBAR QUE ES UN NUMERO
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
 
-		System.out.println("Bienvenido al Zoo Tigres & leones\n--------------------");
-		System.out.println("1-Dar de alta animal");
-		System.out.println("2-Dar de baja animal");
-		System.out.println("3-Modificar peso");
-		System.out.println("4-Listado animales");
-		System.out.println("5-Salir");
+		return opc;
 	}
 
 	private static void Alta_animal(ArrayList<Animales> animal) {
@@ -61,8 +66,8 @@ public class Principal {
 			System.out.println("Introduzca el nombre del animal(Sin incluir numeros!");
 			nombre = Validar_Nomrbe();
 			System.out.println("Introduzca el peso de " + nombre);
-			peso = Validar_Peso();
-			animal.add(new Animales(nombre, tipo, peso));
+			peso = Validar_Entero();
+			animal.add(new Animales(nombre, tipo, peso)); // DAR DE ALTA AL ANIMAL Y METERLO EN EL ARRAYLIST
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -107,16 +112,16 @@ public class Principal {
 
 	}
 
-	public static int Validar_Peso() throws Exception {
+	public static int Validar_Entero() throws Exception {
 		Scanner scanner = new Scanner(System.in);
-		int peso;
+		int numero;
 		try {
-			peso = scanner.nextInt();
+			numero = scanner.nextInt();
 		} catch (InputMismatchException e) {
 			throw new Exception("Numero no valido");
 		}
 
-		return peso;
+		return numero;
 
 	}
 
