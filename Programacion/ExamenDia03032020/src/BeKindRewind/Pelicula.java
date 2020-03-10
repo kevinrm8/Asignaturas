@@ -5,31 +5,31 @@ import java.util.*;
 public class Pelicula {
 	String titulo;
 	int OscarsTotales;
-	String Director;
-	String Productor;
-	
-	Director Dire;
 
-	ArrayList<String> Actores = new ArrayList<String>();
+	Actor Act;
+	Director Dire;
+	Productor Produ;
+	
+	ArrayList<Actor> Actor = new ArrayList<Actor>();
 
 //	Director dire; Para hacer de tal forma que desde aqui llamamos al director/productor/actor para saber sus oscars
 //	Productor Produ;
 //	Actor Acto;
 
-	public Pelicula(String titulo, Director Director, String Productor, int OscarsTotales, ArrayList<String> Actores) {
+	public Pelicula(String titulo, Director Director,Productor Productor, ArrayList<Actor> Actores) {
 		this.titulo = titulo;
-		this.OscarsTotales = OscarsTotales;
-		this.Actores = Actores;
+		Actor = Actores;
 		Dire = Director; // Nombre del director
-		this.Productor = Productor;
+		Produ = Productor;
 	}
 
 	// COMO HACER MEJOR QUE DEVUELVA TODO Y LOS OSCARS MEJORAR, CALCULAR OSCARS AQUI
 	// Y NO EN EL PRINCPIAL
 	public void ReturnPeli() {
-		System.out.println("+'" + titulo + "', dirigida por:" + Dire.getNombreDirector() + " producida por: " + Productor
-				+ " e interpretada por: ");
-		VerActores(Actores);
+		System.out.println("--\n+'" + titulo + "', dirigida por:" + Dire.getNombreDirector() + " producida por: " + Produ.getNombreProductor()
+				+ " e interpretada por:");
+		VerActores(Actor);
+		OscarsTotales = calculoOscar(Actor);
 		System.out
 				.println("Entre el director, productor y actores, " + titulo + " tiene " + OscarsTotales + " oscars.\n\n--");
 		//return ""; HE CAMBIADO A VOID, ESTABA CON STRING
@@ -37,10 +37,27 @@ public class Pelicula {
 	}
 
 	// COMO IMPRIMIR POR PANTALLA ACTORES
-	public void VerActores(ArrayList<String> Actores) {
-		for (int i = 0; i < Actores.size(); i++) {
-			System.out.println(Actores.get(i));
+	public void VerActores(ArrayList<Actor> Actores) {
+		
+		Iterator iter = Actores.iterator();
+		while(iter.hasNext()) {
+		Act = (Actor) iter.next();
+		System.out.println(Act.getNombreActor());
 		}
+		
+	}
+
+	private int calculoOscar(ArrayList<Actor> Actores) {
+		int total=0;
+		
+		total = Dire.getOscarsDirector()+Produ.getOscarsProductor();
+		Iterator iter = Actores.iterator();
+		while(iter.hasNext()) {
+		Act = (Actor) iter.next();
+		total += Act.getOscarsActor();
+		}
+		
+		return total;
 	}
 
 }

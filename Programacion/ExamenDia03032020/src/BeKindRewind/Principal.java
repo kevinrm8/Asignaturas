@@ -116,66 +116,65 @@ public class Principal {
 
 		String titulo, Director, Productor, Actor;
 		int oscars = 0, cont = 1; // Contador de los oscars que tiene la pelicula y los actores de la pelicula
-
-		ArrayList<String> ActorAux = new ArrayList<String>();
+		Director DireAux = null;
+		Productor ProduAux = null;
+		Actor Act = null;
+		
+		ArrayList<Actor> ActorAux = new ArrayList<Actor>();
 
 		System.out.println("Introduzca el titulo de la nueva Pelicula");
 		titulo = scanner.nextLine();
 
 		System.out.println("Introduzca el director de " + titulo);
 		Director = scanner.nextLine();
-
-		Director DireAux = null;
-		for (int i = 0; i < directores.size(); i++) {
-			if (directores.get(i).getNombreDirector().equals(Director)) {
-				oscars += directores.get(i).getOscarsDirector();
-				DireAux = directores.get(i);
+		//ITERATOR DE DIRECTORES
+		Iterator iter = directores.iterator();
+		while(iter.hasNext()) {
+			DireAux = (Director) iter.next();
+			if(DireAux.getNombreDirector().equals(Director)) {
+				break;
 			}
-		} // FOR Directores
+		}
 
 		System.out.println("Introduzca el productor de " + titulo);
 		Productor = scanner.nextLine();
-
-		for (int i = 0; i < productores.size(); i++) {
-			if (productores.get(i).getNombreProductor().equals(Productor)) {
-				oscars += productores.get(i).getOscarsProductor();
-
+		//ITERATOR PRODUCTOR
+		
+		iter = productores.iterator();
+		while(iter.hasNext()) {
+			ProduAux = (Productor) iter.next();
+			if(ProduAux.getNombreProductor().equals(Productor)) {
+				break;
 			}
-		} // FOR Productores
+		}	
+		
 		System.out.println("Ahora vamos a introducir los actores de " + titulo
 				+ ", pulse 'salir' en cualquier momento para dejar de introducirlos:");
 		do {
 			System.out.println("Introduzca nombre del actor:" + cont);
 			Actor = scanner.nextLine();
 
-			for (int i = 0; i < actores.size(); i++) {
-				if (actores.get(i).getNombreActor().equals(Actor)) {
-					oscars += actores.get(i).getOscarsActor();
-					ActorAux.add(Actor); // A�ado el actor al array
+			iter = actores.iterator();
+			while(iter.hasNext()) {
+				Act = (Actor) iter.next();
+				if(Act.getNombreActor().equals(Actor)) {
+					ActorAux.add(Act);
 				}
-			} // FOR Actores
+			}
+			
 			cont++;
 		} while (!Actor.equals("salir"));
 
-		peliculas.add(new Pelicula(titulo, DireAux, Productor, oscars, ActorAux)); // Creo pelicula con el titulo y
+		peliculas.add(new Pelicula(titulo, DireAux, ProduAux, ActorAux)); // Creo pelicula con el titulo y
 																					// oscars totales
 	} 
 
-// NO SE ME OCURRE COMO HCAERLO CON ITER		
-//		Iterator iter = directores.iterator(); 
-// 		Director d;
-//		while(iter.hasNext()) {
-//			d = (director) iter.next();
-//			if(d.getNombreDirector().equals(Director)) {	
-//			}
-//		}
 
 	private static void Listado_Peliculas(ArrayList<Pelicula> peliculas, ArrayList<Director> directores,
 			ArrayList<Productor> productores, ArrayList<Actor> actores) {
 
 		System.out.println("Peliculas: " + peliculas.size() + "\nDirectores: " + directores.size() + "\nProductores: "
 				+ productores.size() + "\nActores: " + actores.size());
-		System.out.println("--\n ");
 		for (int i = 0; i < peliculas.size(); i++) {
 			peliculas.get(i).ReturnPeli();
 
