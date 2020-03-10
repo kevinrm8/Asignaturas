@@ -14,7 +14,7 @@ public class Principal {
 			opc = menu();
 			
 			if(opc<0 || opc>6) { // VALIDAR SI ESTA DENTRO DE RANGO
-				throw new Exception("Fuera de rango");
+				throw new Exception("El numero '"+opc+"' esta fuera de rango");
 			}
 			switch (opc) {
 			case 1:
@@ -64,7 +64,7 @@ public class Principal {
 			System.out.println("Introduce el tipo de animal(l-leon, t-tigre)");
 			tipo = Validar_Tipo();
 			System.out.println("Introduzca el nombre del animal(Sin incluir numeros!");
-			nombre = Validar_Nomrbe();
+			nombre = Validar_Nombre();
 			System.out.println("Introduzca el peso de " + nombre);
 			peso = Validar_Entero();
 			animal.add(new Animales(nombre, tipo, peso)); // DAR DE ALTA AL ANIMAL Y METERLO EN EL ARRAYLIST
@@ -75,16 +75,66 @@ public class Principal {
 
 	}
 
-	private static void Baja_animal(ArrayList<Animales> animal) {
-
+	private static void Baja_animal(ArrayList<Animales> animal) throws Exception {
+		Scanner scanner = new Scanner(System.in);
+		String nombre;
+		int cont=0;
+		boolean comprobar = false; // SE DEBE PODER HACER DE OTRA FORMA
+		
+		System.out.println("Introduzca el nombre del animal para dar de baja:");
+		nombre = Validar_Nombre();
+		
+		Iterator iter = animal.iterator();
+		while(iter.hasNext()) {
+			Animales Aux = (Animales) iter.next();
+			if(Aux.getNombre().equals(nombre)) {
+				animal.remove(cont);
+				System.out.println("Animal de nombre "+nombre+" dado de baja.");
+				comprobar = true;
+			}
+			cont++;
+			
+		} //FIN ITERATOR
+		if (!comprobar) {
+			System.out.println("No existe animal con ese nombre");
+		}
 	}
 
-	private static void Modificar_peso(ArrayList<Animales> animal) {
+	private static void Modificar_peso(ArrayList<Animales> animal) throws Exception {
+		Scanner scanner = new Scanner(System.in);
+		String nombre;
+		int NuevoPeso;
+		boolean comprobar = false; // SE DEBE PODER HACER DE OTRA FORMA
 
+		System.out.println("Introduzca el nombre del animal para modificar el peso");
+		nombre = Validar_Nombre();
+		
+		Iterator iter = animal.iterator();
+		while(iter.hasNext()) {
+			Animales Aux = (Animales) iter.next();
+			if(Aux.getNombre().equals(nombre)) {
+				System.out.println("Dime el nuevo peso de "+nombre);
+				NuevoPeso = Validar_Entero();
+				Aux.setPeso(NuevoPeso);
+			}
+		}
+		if (!comprobar) {
+			System.out.println("No existe animal con ese nombre");
+		}
+		
 	}
 
 	private static void Listado_animales(ArrayList<Animales> animal) {
-
+		
+		Iterator iter = animal.iterator();
+		while(iter.hasNext()) {
+			Animales Aux = (Animales) iter.next();
+			System.out.println(Aux.Listado_animales());
+		}
+		if(animal.size()==0) {
+			System.out.println("No hay animales");
+		}
+		
 	}
 
 	public static String Validar_Tipo() throws Exception {
@@ -98,14 +148,14 @@ public class Principal {
 			return tipo;
 	}
 
-	public static String Validar_Nomrbe() throws Exception {
+	public static String Validar_Nombre() throws Exception {
 		Scanner scanner = new Scanner(System.in);
 		String nombre, aux;
 		nombre = scanner.nextLine().toLowerCase();
 
 		for (int i = 0; i < nombre.length(); i++) {
 			if (Character.isDigit(nombre.charAt(i))) {
-				throw new Exception("Contiene un numero");
+				throw new Exception("El nombre contiene algun numero");
 			}
 		}
 		return nombre;
@@ -118,7 +168,7 @@ public class Principal {
 		try {
 			numero = scanner.nextInt();
 		} catch (InputMismatchException e) {
-			throw new Exception("Numero no valido");
+			throw new Exception("No has puesto un numero");
 		}
 
 		return numero;
