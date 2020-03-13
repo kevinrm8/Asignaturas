@@ -12,6 +12,7 @@ public class EjD {
 
 		casos = scanner.nextInt();
 
+		ArrayList<Pastel> TodosPosibles = new ArrayList<Pastel>();
 		ArrayList<Pastel> Ordenado = new ArrayList<Pastel>();
 		ArrayList<Pastel> OrdeAux = new ArrayList<Pastel>();
 
@@ -22,37 +23,28 @@ public class EjD {
 			natural = scanner.nextInt();
 			apetencia = scanner.nextInt();
 
-			Pastel P = new Pastel(anyadido, natural, apetencia);
-
-			Ordenado.add(P);
-
-		}
-
-		int cont = 0;
-
-		Iterator iter = Ordenado.iterator();
-		Iterator iter2 = OrdeAux.iterator();
-
-		while (iter.hasNext()) {
-			Pastel PAux = (Pastel) iter.next();
-			
-			while(iter2.hasNext()) {
-				Pastel PAux2 = (Pastel) iter2.next();
-				if(PAux.getNatural()<PAux2.getNatural()) {
-					OrdeAux.add(PAux2);
-					Ordenado.remove(index)
-				}
-				
-				
+			if ((anyadido + natural) <= maximo) {
+				Pastel P = new Pastel(anyadido, natural, apetencia);
+				TodosPosibles.add(P);
 			}
-			
 		}
+		
+		Collections.sort(TodosPosibles);
+		
+		// SIN ORDENAR
+		Iterator iter = TodosPosibles.iterator();
+		while(iter.hasNext()) {
+			Pastel Aux = (Pastel) iter.next();
+			System.out.println(Aux.getAnyadido()+" "+Aux.getNatural()+" "+Aux.getApetencia());
+		}
+		
+		
 
 	}
 
 }
 
-class Pastel {
+class Pastel implements Comparable<Pastel>{
 	private int anyadido;
 	private int natural;
 	private int apetencia;
@@ -75,4 +67,22 @@ class Pastel {
 		return apetencia;
 	}
 
+	@Override
+	public int compareTo(Pastel arg0) {
+		String a = new String(String.valueOf(this.getAnyadido())+this.getNatural());
+		String b = new String(String.valueOf(arg0.getAnyadido())+arg0.getNatural());
+		return a.compareTo(b);
+	}
+
 }
+
+
+/*
+
+5 100
+0 100 22
+50 20 3
+100 100 2000
+20 50 2
+50 20 4
+*/
