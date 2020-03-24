@@ -1,0 +1,10 @@
+Bienvenido al chat con Paco
+Paco: Hola que tal, cómo te llamas?
+Kevin Rosales
+Paco: Hola Kevin Rosales, ¿Como estas hoy?
+Kevin Rosales: durmniendo todavia
+Paco: Qué interesante...cuentame más…
+Kevin Rosales: pues quiero dormir, gracias
+Paco: No me interesa nada, cuentame otra cosa
+Kevin Rosales: adios, vete por ahi
+Paco: Nos vemos Kevin Rosales!
