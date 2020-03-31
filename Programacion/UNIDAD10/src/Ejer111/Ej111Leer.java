@@ -15,6 +15,7 @@ public class Ej111Leer {
 
 		FileReader f = new FileReader("Salida3.txt");
 		BufferedReader b = new BufferedReader(f);
+		
 		while ((cadena = b.readLine()) != null) {
 			num = Integer.parseInt(cadena); // PARA poder convertirlo en el archivo "Salida3.txt" Entre cada numero no debe haber ningun espacio, solo un salto de linea
 			if (num % 5 == 0)
