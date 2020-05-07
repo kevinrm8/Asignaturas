@@ -24,4 +24,7 @@ public class Persona {
 	public int getEdad() {
 		return Edad;
 	}
+	public int Jubilacion() {
+		return (65 - this.Edad);
+	}
 }
